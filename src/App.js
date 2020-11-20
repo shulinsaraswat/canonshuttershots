@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Scroll from '../src/component/BackTopButton';
+import Main from '../src/component/Main';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+    AOS.init({
+      offset:200,
+      duration:800
+    });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+        {/* <Loader/> */}
+        <Main/>   
+        <Scroll showBelow={250} />
+      </div>
   );
 }
 

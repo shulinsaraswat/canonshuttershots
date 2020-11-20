@@ -1,0 +1,39 @@
+.box-pp{
+    padding:20px;
+    margin:2%;
+    background:white;
+    border:1px solid #d6d6d6;
+    box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+    border-radius:3px;
+    transition:.2s all; 
+}
+.pp4{
+    margin-top:-33%;
+}
+.pp6{
+    margin-top:-33%;
+}
+.pp13{
+    margin-top:-25%;
+}
+.pp9{
+    margin-top:-25%;
+}
+.pp10{
+    margin-top:-20%;
+}
+.pp12{
+    margin-top:-17%;
+}
+.pp7{
+    margin-top:-65%;
+}
+.pp14{
+    margin-top:-60%;
+}
+.pp17{
+    margin-top:-62%
+}
+.pp16{
+    margin-top:-57%;
+}

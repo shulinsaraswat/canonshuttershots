@@ -1,0 +1,60 @@
+.welcome{
+    text-align:center;
+    color: white;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/* color:  */
+
+.heading-hero{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: -0.em;
+    background-color: red;
+    background-image:linear-gradient(45deg,white,#00a2c8);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.typing{
+    color:white;
+    text-align:center;
+}
+
+.lead-down{
+    position: absolute;
+    left: 0;
+    right:0;
+    width: 100%;
+    text-align: center;
+    z-index:10;
+    bottom:15px;
+    color:#fff;
+}
+.lead-down span{
+    cursor:pointer;
+    display:block;
+    margin:0 auto;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border:3px solid #fff;
+    text-align:center
+}
+.lead-down i{
+    animation:pulsate 1.5s ease;
+    animation-iteration-count:infinite;
+    padding-top:5px
+}
+@keyframes pulsate{0%{transform:scale(1, 1)}50%{transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}
