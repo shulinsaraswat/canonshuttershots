@@ -18,7 +18,7 @@ export default function Portfolio(){
                                     <div className="card-body">
                                         <h5 className="card-title">NATURE</h5>
                                         <p className="card-text">"Look deep into nature, and then we will understand everything better."</p>
-                                        <a className="btn viewbtn rounded-pill shadow" href="/portfolio/nature" 
+                                        <a className="btn viewbtn rounded-pill shadow" href="/canonshuttershots/portfolio/nature" 
                                             style={{textDecoration:'none', width:'50%'}}>
                                         <i className="fa fa-eye">&ensp;View</i>
                                         </a>
@@ -31,7 +31,7 @@ export default function Portfolio(){
                                 <div className="card-body">
                                     <h5 className="card-title">PEOPLE</h5>
                                     <p className="card-text">"A photograph is one that fully express what one feels, in the deepest sense, about what is being photographed."</p>
-                                    <a className="btn viewbtn rounded-pill shadow" href="/portfolio/people" 
+                                    <a className="btn viewbtn rounded-pill shadow" href="/canonshuttershots/portfolio/people" 
                                         style={{textDecoration:'none', width:'50%'}}>
                                         <i className="fa fa-eye">&ensp;View</i>
                                     </a>
@@ -44,7 +44,7 @@ export default function Portfolio(){
                                 <div className="card-body">
                                     <h5 className="card-title">PLACE</h5>
                                     <p className="card-text">"Fill up frame with feeling, energy, discovery, and risk, and leave room enough for someone else to get in there."</p>
-                                    <a className="btn viewbtn rounded-pill shadow" href="/portfolio/place" 
+                                    <a className="btn viewbtn rounded-pill shadow" href="/canonshuttershots/portfolio/place" 
                                         style={{textDecoration:'none', width:'50%'}}>
                                         <i className="fa fa-eye">&ensp;View</i>
                                     </a>
@@ -57,7 +57,7 @@ export default function Portfolio(){
                                 <div className="card-body">
                                     <h5 className="card-title">WILDLIFE</h5>
                                     <p className="card-text">"Photograph takes an instant out of time, alerting life by holding it still."</p>
-                                    <a className="btn viewbtn rounded-pill shadow" href="/portfolio/wildlife" 
+                                    <a className="btn viewbtn rounded-pill shadow" href="/canonshuttershots/portfolio/wildlife" 
                                         style={{textDecoration:'none', width:'50%'}}>
                                         <i className="fa fa-eye">&ensp;View</i>
                                     </a>

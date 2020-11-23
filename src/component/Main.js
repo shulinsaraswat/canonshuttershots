@@ -3,7 +3,6 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import About from './About';
 import Portfolio from './Portfolio';
-import Tools from './Tools';
 import Contact from './Contact';
 import Footer from './Footer';
 
@@ -22,9 +21,6 @@ export default function Main(){
             {/* Portfolio BEGIN */}
             <Portfolio/><hr style={{width:'75%'}}></hr>
             {/* Portfolio END */}
-            {/* Tools BEGIN */}
-            {/* <Tools/><hr style={{width:'75%'}}></hr> */}
-            {/* Tools END */}
             {/* Contact BEGIN */}
             <Contact/><hr style={{width:'75%'}}></hr>
             {/* Contact END */}

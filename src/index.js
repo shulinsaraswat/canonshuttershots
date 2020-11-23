@@ -8,15 +8,14 @@ import Wildlife from './component/Wildlife';
 import Place from './component/Place';
 import Nature from './component/Nature';
 import People from './component/People';
-import About from './component/About';
 
 const routes=<BrowserRouter>
   <Switch>
     <Route exact path="/canonshuttershots/" component={App}/>
-    <Route exact path="/portfolio/nature" component={Nature}/>
-    <Route exact path="/portfolio/place" component={Place}/>
-    <Route exact path="/portfolio/people" component={People}/>
-    <Route exact path="/portfolio/wildlife" component={Wildlife}/>
+    <Route exact path="/canonshuttershots/portfolio/nature" component={Nature}/>
+    <Route exact path="/canonshuttershots/portfolio/place" component={Place}/>
+    <Route exact path="/canonshuttershots/portfolio/people" component={People}/>
+    <Route exact path="/canonshuttershots/portfolio/wildlife" component={Wildlife}/>
   </Switch>
 </BrowserRouter>
 

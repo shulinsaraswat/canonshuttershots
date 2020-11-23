@@ -1,6 +1,6 @@
 import React from 'react';
 // import hero from '../images/hero1.JPG';
-import {Parallax, Background} from 'react-parallax';
+import {Parallax} from 'react-parallax';
 import hero from '../images/hero2.jpeg';
 import Typewriter from 'typewriter-effect';
 import '../css/hero.css';
