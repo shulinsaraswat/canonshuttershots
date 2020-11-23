@@ -12,7 +12,7 @@ export default function Portfolio(){
                 <hr style={{width:'8%', color:'#00a2c8', backgroundColor:'#00a2c8'}}></hr><br/>
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-2 box-wrap">
-                        <a href="/portfolio/nature" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
+                        <a href="/canonshuttershots/portfolio/nature" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
                             <div className="card box">
                                     <img src={nature} className="card-img-top" alt="flower for nature"/>
                                     <div className="card-body">
@@ -25,7 +25,7 @@ export default function Portfolio(){
                                     </div>
                             </div>
                         </div></a>
-                        <a href="/portfolio/people" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
+                        <a href="/canonshuttershots/portfolio/people" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
                             <div className="card box">
                                 <img src={people} className="card-img-top" alt="group"/>
                                 <div className="card-body">
@@ -38,7 +38,7 @@ export default function Portfolio(){
                                 </div>
                             </div>
                         </div></a>
-                        <a href="/portfolio/place" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
+                        <a href="/canonshuttershots/portfolio/place" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
                             <div className="card box">
                                 <img src={place} className="card-img-top" alt="place"/>
                                 <div className="card-body">
@@ -51,7 +51,7 @@ export default function Portfolio(){
                                 </div>
                             </div>
                         </div></a>
-                        <a href="/portfolio/wildlife" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
+                        <a href="/canonshuttershots/portfolio/wildlife" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
                             <div className="card box">
                                 <img src={wildlife} className="card-img-top" alt="lion"/>
                                 <div className="card-body">
