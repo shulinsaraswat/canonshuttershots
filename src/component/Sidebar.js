@@ -5,6 +5,7 @@ import PetsIcon from '@material-ui/icons/Pets';
 import EcoIcon from '@material-ui/icons/Eco';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import PlaceIcon from '@material-ui/icons/Place';
+import HomeIcon from '@material-ui/icons/Home';
 
 export default class Sidebar extends Component{
 
@@ -16,9 +17,9 @@ export default class Sidebar extends Component{
     }
     handleScroll=()=>{
         if(window.scrollY>120){
-            document.querySelector(".sidebar").className="sidebar active";
+            document.querySelector(".sidebar").className="sidebar activeSide";
         } else{
-            document.querySelector(".sidebar").className="sidebar hide";
+            document.querySelector(".sidebar").className="sidebar hideSide";
         }
     }
 
@@ -39,6 +40,7 @@ export default class Sidebar extends Component{
                 <a href="/portfolio/people"><span><i className="material-icons "><PeopleAltIcon/></i></span><span className="icon-text"> &emsp;People</span></a><br/>
                 <a href="/portfolio/place"><span><i className="material-icons "><PlaceIcon/></i></span><span className="icon-text"> &emsp;Place</span></a><br/>
                 <a href="/portfolio/wildlife"><span><i className="material-icons "><PetsIcon/></i></span><span className="icon-text"> &emsp;Wildlife</span></a><br/>
+                <a href="/"><span><i className="material-icons "><HomeIcon/></i></span><span className="icon-text"> &emsp;Home Page</span></a><br/>
             </div>
         );
     }

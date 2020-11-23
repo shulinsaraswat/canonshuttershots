@@ -37,10 +37,45 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Canon Shuttershots</title>
+    <style>
+      .loader {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #00a2c8;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        margin-left:47%;
+        margin-top: 20%;
+        animation: spin 2s linear infinite;
+      }
+      
+      @keyframes spin {
+        0%  { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      @media (min-width: 320.90px) and (max-width: 768.98px){
+        .loader{
+          margin-left:36%;
+          margin-top:60%;
+        }
+      }
+      @media(max-width: 320.98px){
+        .loader{
+          width: 90px;
+          height: 90px;
+          margin-left:35%;
+          margin-top:60%;
+        }
+      }
+      </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div class="loader-container">
+      <div class="loader"></div>
+   </div>
     <!--
       Canon Shuttershot Page
     -->

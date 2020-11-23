@@ -12,30 +12,42 @@ export default function Portfolio(){
                 <hr style={{width:'8%', color:'#00a2c8', backgroundColor:'#00a2c8'}}></hr><br/>
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-2 box-wrap">
-                        <a href="#" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
+                        <a href="/portfolio/nature" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
                             <div className="card box">
                                     <img src={nature} className="card-img-top" alt="flower for nature"/>
                                     <div className="card-body">
                                         <h5 className="card-title">NATURE</h5>
                                         <p className="card-text">"Look deep into nature, and then we will understand everything better."</p>
+                                        <a className="btn viewbtn rounded-pill shadow" href="/portfolio/nature" 
+                                            style={{textDecoration:'none', width:'50%'}}>
+                                        <i className="fa fa-eye">&ensp;View</i>
+                                        </a>
                                     </div>
                             </div>
                         </div></a>
-                        <a href="#" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
+                        <a href="/portfolio/people" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
                             <div className="card box">
                                 <img src={people} className="card-img-top" alt="group"/>
                                 <div className="card-body">
                                     <h5 className="card-title">PEOPLE</h5>
                                     <p className="card-text">"A photograph is one that fully express what one feels, in the deepest sense, about what is being photographed."</p>
+                                    <a className="btn viewbtn rounded-pill shadow" href="/portfolio/people" 
+                                        style={{textDecoration:'none', width:'50%'}}>
+                                        <i className="fa fa-eye">&ensp;View</i>
+                                    </a>
                                 </div>
                             </div>
                         </div></a>
-                        <a href="#" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
+                        <a href="/portfolio/place" style={{textDecoration:'none', color: '#212529'}}><div className="col mb-4">
                             <div className="card box">
                                 <img src={place} className="card-img-top" alt="place"/>
                                 <div className="card-body">
                                     <h5 className="card-title">PLACE</h5>
                                     <p className="card-text">"Fill up frame with feeling, energy, discovery, and risk, and leave room enough for someone else to get in there."</p>
+                                    <a className="btn viewbtn rounded-pill shadow" href="/portfolio/place" 
+                                        style={{textDecoration:'none', width:'50%'}}>
+                                        <i className="fa fa-eye">&ensp;View</i>
+                                    </a>
                                 </div>
                             </div>
                         </div></a>
@@ -44,7 +56,11 @@ export default function Portfolio(){
                                 <img src={wildlife} className="card-img-top" alt="lion"/>
                                 <div className="card-body">
                                     <h5 className="card-title">WILDLIFE</h5>
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                    <p className="card-text">"Photograph takes an instant out of time, alerting life by holding it still."</p>
+                                    <a className="btn viewbtn rounded-pill shadow" href="/portfolio/wildlife" 
+                                        style={{textDecoration:'none', width:'50%'}}>
+                                        <i className="fa fa-eye">&ensp;View</i>
+                                    </a>
                                 </div>
                             </div>
                         </div></a>

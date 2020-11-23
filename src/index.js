@@ -8,6 +8,7 @@ import Wildlife from './component/Wildlife';
 import Place from './component/Place';
 import Nature from './component/Nature';
 import People from './component/People';
+import About from './component/About';
 
 const routes=<BrowserRouter>
   <Switch>

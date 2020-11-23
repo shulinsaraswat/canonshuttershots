@@ -6,8 +6,8 @@
     align-items:center;
     justify-content:center;
     
-  }
-  .box{
+}
+.box{
     padding:30px 30px 0px 30px;
     margin:2%;
     background:white;
@@ -15,16 +15,26 @@
     box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
     border-radius:3px;
     transition:.2s all; 
-  }
-  .box-wrap:hover .box{
-    filter:blur(3px);
+}
+.box-wrap:hover .box{
     opacity:.5;
     transform: scale(.98);
     box-shadow:none;
-  }
-  .box-wrap:hover .box:hover{
+}
+.box-wrap:hover .box:hover{
     transform:scale(1);
     filter:blur(0px);
     opacity:1;
     box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
-  }
+}
+.viewbtn{
+  color: #00a2c8;
+  border-color: #00a2c8;
+  margin-left: 25%;
+}
+
+.viewbtn:hover{
+  color:#fff;
+  background-color: #00a2c8;
+  border-color:#00a2c8;
+}

@@ -23,11 +23,11 @@ html{
     cursor: pointer;
 }
 .navbar:not(active){
-    transition: all 1s ease-in;
+    transition: all 1s ease-in-out;
 }
 .active{
     background: #f8f9fa;
-    transition: all 1s ease-in;
+    transition: all 1s ease-in-out;
 }
 .hide{
     display: none;

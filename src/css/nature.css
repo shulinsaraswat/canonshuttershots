@@ -1,3 +1,17 @@
+.background-nr{
+    background-image:url('https://i.pinimg.com/originals/1c/51/55/1c5155b5974301277b45f4ddaae722b0.jpg');
+}
+.banner-nr{
+    text-align:left;
+    margin-left:155px;
+}
+.line-nr{
+    text-align:left;
+    margin-left:13%;
+    width:8%;
+    color:#00a2c8;
+    background-color:#00a2c8;
+}
 .box-nr{
     padding:20px;
     margin:2%;
@@ -24,4 +38,42 @@
 }
 .nr11{
     margin-top:-105%;
+}
+
+@media (min-width: 320.90px) and (max-width: 768.98px){
+    .banner-nr{
+        margin-left: 11%;
+        margin-top: 7%;
+    }
+    .line-nr{
+        margin-left:16%;
+        width:29%;
+        color:#00a2c8;
+        background-color:#00a2c8;
+    }
+    .hero1, .nr4, .nr12, .banner, .nr6{
+        margin-top: 0px;
+    }
+    .nr11{
+        margin-top:-5%;
+    }
+}
+
+@media(max-width:320.98px){
+    .banner-nr{
+        margin-left: 11%;
+        margin-top: 7%;
+    }
+    .line-nr{
+        margin-left:17%;
+        width:38%;
+        color:#00a2c8;
+        background-color:#00a2c8;
+    }
+    .hero1, .nr4, .nr12, .banner, .nr6{
+        margin-top: 0px;
+    }
+    .nr11{
+        margin-top:-5%;
+    }
 }

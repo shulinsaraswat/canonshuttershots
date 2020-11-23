@@ -1,3 +1,17 @@
+.background-pl{
+    background-image:url('https://i.pinimg.com/originals/1c/51/55/1c5155b5974301277b45f4ddaae722b0.jpg');
+}
+.banner-pl{
+    text-align:left;
+    margin-left:155px;
+}
+.line-pl{
+    text-align:left;
+    margin-left:12%;
+    width:7%;
+    color:#00a2c8;
+    background-color:#00a2c8;
+}
 .box-pl{
     padding:20px;
     margin:2%;
@@ -15,4 +29,35 @@
 }
 .pl6{
     margin-top:-82%;
+}
+
+@media (min-width: 320.90px) and (max-width: 768.98px){
+    .banner-pl{
+        margin-left: 11%;
+        margin-top: 7%;
+    }
+    .line-pl{
+        margin-left:14%;
+        width:23%;
+        color:#00a2c8;
+        background-color:#00a2c8;
+    }
+    .pl3,.pl4,.pl6{
+        margin-top:0px;
+    }
+}
+@media(max-width:320.98px){
+    .banner-pl{
+        margin-left: 11%;
+        margin-top: 7%;
+    }
+    .line-pl{
+        margin-left:14%;
+        width:31%;
+        color:#00a2c8;
+        background-color:#00a2c8;
+    }
+    .pl3,.pl4,.pl6{
+        margin-top:0px;
+    }
 }

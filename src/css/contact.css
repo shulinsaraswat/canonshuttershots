@@ -17,8 +17,14 @@
     -moz-text-fill-color: transparent;
 }
 
-@media (max-width: 320.98px){
+@media (min-width: 320.90px) and (max-width: 768.98px){
     #contact .list-inline a{
-        padding: 10px;
+        padding: 18px;
+    }
+}
+
+@media(max-width:320.98px){
+    #contact .list-inline a{
+        padding: 9px;
     }
 }
