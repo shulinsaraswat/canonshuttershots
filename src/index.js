@@ -12,7 +12,7 @@ import About from './component/About';
 
 const routes=<BrowserRouter>
   <Switch>
-    <Route exact path="/" component={App}/>
+    <Route exact path="/canonshuttershots/" component={App}/>
     <Route exact path="/portfolio/nature" component={Nature}/>
     <Route exact path="/portfolio/place" component={Place}/>
     <Route exact path="/portfolio/people" component={People}/>
