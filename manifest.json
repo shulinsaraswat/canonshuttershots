@@ -1,0 +1,24 @@
+{
+  "short_name": "Canon Shuttershots",
+  "name": "Canon Shuttershots",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png"
+      
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png"
+      
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
