@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/canonshuttershots/static/css/main.b56fe8c3.chunk.css",
-    "main.js": "/canonshuttershots/static/js/main.82d45920.chunk.js",
-    "main.js.map": "/canonshuttershots/static/js/main.82d45920.chunk.js.map",
+    "main.js": "/canonshuttershots/static/js/main.dd1f2e56.chunk.js",
+    "main.js.map": "/canonshuttershots/static/js/main.dd1f2e56.chunk.js.map",
     "runtime-main.js": "/canonshuttershots/static/js/runtime-main.c4ba9d9a.js",
     "runtime-main.js.map": "/canonshuttershots/static/js/runtime-main.c4ba9d9a.js.map",
     "static/css/2.ec02d681.chunk.css": "/canonshuttershots/static/css/2.ec02d681.chunk.css",
@@ -69,6 +69,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.b4520255.chunk.js",
     "static/css/main.b56fe8c3.chunk.css",
-    "static/js/main.82d45920.chunk.js"
+    "static/js/main.dd1f2e56.chunk.js"
   ]
 }
