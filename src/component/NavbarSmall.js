@@ -44,11 +44,11 @@ export default class NavbarSmall extends Component{
                             <a className="nav-link" href="/canonshuttershots/portfolio/wildlife"><span><i className="material-icons "><PetsIcon/></i></span><span className="icon-text"> &emsp;Wildlife</span></a><br/>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/"><span><i className="material-icons "><HomeIcon/></i></span><span className="icon-text"> &emsp;Home Page</span></a><br/>
+                            <a className="nav-link" href="/canonshuttershots/"><span><i className="material-icons "><HomeIcon/></i></span><span className="icon-text"> &emsp;Home Page</span></a><br/>
                         </li>
                     </ul>
                 </div>
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/canonshuttershots/">
                     <img src={logo} width="50" height="30" alt="cs logo" loading="lazy"/>
                 </a>
             </nav>

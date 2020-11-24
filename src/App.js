@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react';
 import './App.css';
-import Scroll from '../src/component/BackTopButton';
 import Main from '../src/component/Main';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -33,10 +32,8 @@ function App() {
 
   return (
     <div>
-        {/* <Loader/> */}
-        <Main/>   
-        <Scroll showBelow={250} />
-      </div>
+      <Main/>   
+    </div>
   );
 }
 

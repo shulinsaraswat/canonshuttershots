@@ -14,7 +14,7 @@ export default class About extends Component{
                     <div className="card mb-3" data-aos="fade-up" >
                         <div className="row">
                             <div className="col-md-3">
-                                <img src={about} className="card-img" alt="profile" />
+                                <img src={about} className="card-img" alt="profile" style={{height:'100%'}}/>
                             </div>
                             <div className="col-md-9">
                                 <div className="card-body">
@@ -22,6 +22,10 @@ export default class About extends Component{
                                         Hi! I'm Shulin Saraswat, a <i>photography enthusiast</i> , who capture the good times, develop from the negative and if things don't make out <b>TAKE ANOTHER SHOT !</b>.
                                         Moreover I am a developer and analyst from Bangalore, India working with <b style={{color:'#21AA47'}}>Standard Chartered Global Business Service</b> and <i>titled as Developer - Technology &amp; Innovation. </i> 
                                         I pursued my <i>Bachelor's of Technology in Electronics and Communication with specialisation in Internet of Things and Sensors</i> at Vellore Institute of Technology, Vellore
+                                    </p>
+                                    <p><i><strong>
+                                        "To photograph is to hold one's breathe, when all faculties coverge to capture fleeting reality. 
+                                        It's at that precise moment that mastering an image becomes a great physical and intellectual joy."</strong></i>
                                     </p>
                                 </div>
                             </div>

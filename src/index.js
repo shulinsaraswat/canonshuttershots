@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,15 +9,15 @@ import Place from './component/Place';
 import Nature from './component/Nature';
 import People from './component/People';
 
-const routes=<HashRouter>
+const routes=<Router>
   <Switch>
-    <Route exact path='/canonshuttershots/#' component={App}/>
-    <Route exact path='/canonshuttershots/#/portfolio/nature' component={Nature}/>
-    <Route exact path='/canonshuttershots/#/portfolio/place' component={Place}/>
-    <Route exact path='/canonshuttershots/#/portfolio/people' component={People}/>
-    <Route exact path='/canonshuttershots/#/portfolio/wildlife' component={Wildlife}/>
+    <Route exact path='/canonshuttershots/' component={App}/>
+    <Route exact path='/canonshuttershots/portfolio/nature' component={Nature}/>
+    <Route exact path='/canonshuttershots/portfolio/place' component={Place}/>
+    <Route exact path='/canonshuttershots/portfolio/people' component={People}/>
+    <Route exact path='/canonshuttershots/portfolio/wildlife' component={Wildlife}/>
   </Switch>
-</HashRouter>
+</Router>
 
 ReactDOM.render(
   routes,

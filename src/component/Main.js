@@ -5,10 +5,13 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
+import Scroll from './BackTopButton';
+
 
 export default function Main(){
     return(
         <div>
+            <Scroll showBelow={250} />
             {/* Navbar BEGIN */}
             <Navbar/>
             {/* Navbar END */}

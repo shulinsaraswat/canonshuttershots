@@ -41,7 +41,7 @@ export default class Navbar extends Component{
                         </li>
                     </ul>
                 </div>
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/canonshuttershots/">
                     <img src={logo} width="50" height="30" alt="cs logo" loading="lazy"/>
                 </a>
             </nav>
