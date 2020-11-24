@@ -4,7 +4,7 @@ import '../css/nature.css';
 import Scroll from './BackTopButton';
 import NavbarSmall from './NavbarSmall';
 import nature from '../images/nature.jpeg';
-import hero1 from '../images/hero1.JPG';
+import hero1 from '../images/hero1.jpg';
 import nr1 from '../images/nature/nr1.jpg';
 import nr2 from '../images/nature/nr2.jpeg';
 import nr3 from '../images/nature/nr3.jpeg';
@@ -13,7 +13,7 @@ import nr5 from '../images/nature/nr5.jpeg';
 import nr6 from '../images/nature/nr6.jpeg';
 import nr7 from '../images/nature/nr7.jpeg';
 import nr11 from '../images/nature/nr11.jpeg';
-import nr12 from '../images/nature/nr12.JPG';
+import nr12 from '../images/nature/nr12.jpg';
 import banner from '../images/banner.jpeg';
 
 export default function Nature(){

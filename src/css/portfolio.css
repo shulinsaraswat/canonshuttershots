@@ -38,3 +38,26 @@
   background-color: #00a2c8;
   border-color:#00a2c8;
 }
+
+@media (max-width:320.98px){
+    .box{
+        padding:15px 15px 0px 15px;
+    }
+    .card-title{
+        font-size: 17px;
+    }
+    .card-text{
+        font-size:15px;
+    }
+}
+@media (min-width:320.90px) and (max-width:768.98px){
+    .box{
+        padding:17px 17px 0px 17px;
+    }
+    .card-title{
+        font-size:19px;
+    }
+    .card-text{
+        font-size:17px;
+    }
+}

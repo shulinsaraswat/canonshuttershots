@@ -9,13 +9,13 @@ import Place from './component/Place';
 import Nature from './component/Nature';
 import People from './component/People';
 
-const routes=<Router>
+const routes=<Router basename="/canonshuttershots">
   <Switch>
-    <Route exact path='/canonshuttershots/' component={App}/>
-    <Route exact path='/canonshuttershots/portfolio/nature' component={Nature}/>
-    <Route exact path='/canonshuttershots/portfolio/place' component={Place}/>
-    <Route exact path='/canonshuttershots/portfolio/people' component={People}/>
-    <Route exact path='/canonshuttershots/portfolio/wildlife' component={Wildlife}/>
+    <Route exact path='/' component={App}/>
+    <Route exact path='/nature' component={Nature}/>
+    <Route exact path='/place' component={Place}/>
+    <Route exact path='/people' component={People}/>
+    <Route exact path='/wildlife' component={Wildlife}/>
   </Switch>
 </Router>
 
