@@ -6,6 +6,16 @@ export default class Navbar extends Component{
 
     componentDidMount(){
         window.addEventListener("scroll", this.handleScroll);
+
+        var header= document.getElementById("navbarTogglerDemo02")
+        var btns= header.getElementsByClassName("nav-link");
+        for(var i=0; i<btns.length; i++){
+            btns[i].addEventListener("click", function(){
+                var current=document.getElementsByClassName("selected");
+                current[0].className=current[0].className.replace("selected","");
+                this.className+=" selected";
+            });
+        }
     } 
     componentWillUnmount(){
         window.removeEventListener("Scroll", this.handleScroll);
@@ -28,7 +38,7 @@ export default class Navbar extends Component{
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            <a className="nav-link selected" href="#">Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#about">About</a>

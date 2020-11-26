@@ -11,6 +11,16 @@ import HomeIcon from '@material-ui/icons/Home';
 export default class NavbarSmall extends Component{
     componentDidMount(){
         window.addEventListener("scroll", this.handleScroll);
+
+        var header= document.getElementById("navbarTogglerDemo02")
+        var btns= header.getElementsByClassName("nav-link");
+        for(var i=0; i<btns.length; i++){
+            btns[i].addEventListener("click", function(){
+                var current=document.getElementsByClassName("selected");
+                current[0].className=current[0].className.replace("selected","");
+                this.className+=" selected";
+            });
+        }
     } 
     componentWillUnmount(){
         window.removeEventListener("Scroll", this.handleScroll);
@@ -32,7 +42,7 @@ export default class NavbarSmall extends Component{
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" href="/nature"><span><i className="material-icons "><EcoIcon/></i></span><span className="icon-text"> &emsp;Nature</span></a><br/>
+                            <a className="nav-link selected" href="/nature"><span><i className="material-icons "><EcoIcon/></i></span><span className="icon-text"> &emsp;Nature</span></a><br/>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/people"><span><i className="material-icons "><PeopleAltIcon/></i></span><span className="icon-text"> &emsp;People</span></a><br/>

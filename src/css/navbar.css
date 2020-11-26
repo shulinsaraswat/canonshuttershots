@@ -4,7 +4,7 @@ html{
 .navbar-light .navbar-nav .nav-link{
     color: #818181;
 }
-.navbar-light .navbar-nav .nav-link:active{
+.navbar-light .navbar-nav .selected{
     color: #00a2c8;
 }
 .navbar-light .navbar-nav .nav-link:hover{

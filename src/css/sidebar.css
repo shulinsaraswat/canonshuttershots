@@ -19,7 +19,7 @@
     transition: 0.5s;    
   }
   
-  .sidebar a {
+  .sidebar .btnSide {
     padding: 8px 8px 8px 25px;
     margin-top: 10px;
     margin-bottom:40px;
@@ -30,7 +30,7 @@
 
   }
   
-  .sidebar a:hover {
+  .sidebar .btnSide:hover {
     color: #21aa47;
     text-decoration: none;
     background-color:white;
@@ -55,11 +55,8 @@
 
   }
 
-  .sidebar a:focus{
-      color: #21aa47;
-  }
 
-  .sidebar a:active{
+  .sidebar .btnSide:active{
     color: #21aa47;
 }
   
