@@ -4,7 +4,7 @@
 #contact .list-inline a{
     color:#a1a1a1;
     padding: 20px;
-    transition: .9s;
+    transition: all .3s ease-in-out;
 }
 #contact .list-inline a i:hover{
     transform: scale(1.2);
