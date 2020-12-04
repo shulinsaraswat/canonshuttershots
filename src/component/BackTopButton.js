@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     toTop: {
         zIndex: 2,
         position: 'fixed',
-        bottom: '2vh',
+        bottom: '3.6em',
         backgroundColor: '#DCDCDC',
         color: 'black',
         "&:hover, &.Mui-focusVisible": {
@@ -16,11 +16,13 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: '#DCDCDC'
         },
         [theme.breakpoints.up('xs')]: {
-            right: '5%',
+            right: '6.4%',
+            bottom:'12vh',
             backgroundColor: 'rgb(220,220,220,0.7)',
         },
         [theme.breakpoints.up('lg')]: {
-            right: '4.5%',
+            right: '2.0%',
+            bottom:'3.6em',
         },
     }
 })
