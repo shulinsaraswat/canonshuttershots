@@ -16,7 +16,7 @@ export default class Contact extends Component{
                             <a href="https://shulinsaraswat.github.io/ss/" target="_blank"><i className="fa fa-2x fa-desktop"></i></a>
                         </li>
                         <li className="list-inline-item">
-                            <a href="https://www.linkedin.com/in/shulin-saraswat-7aba05121/" target="_blank"><i className="fa fa-2x fa-linkedin-square"></i></a>
+                            <a href="https://www.linkedin.com/in/shulinsaraswat/" target="_blank"><i className="fa fa-2x fa-linkedin-square"></i></a>
                         </li>          
                         <li className="list-inline-item">
                             <a href="mailto: shulin.saraswat5@gmail.com" target="_blank"><i className="fa fa-2x fa-envelope"></i></a>
