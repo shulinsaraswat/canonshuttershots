@@ -3,18 +3,19 @@
   "name": "Canon Shuttershots",
   "icons": [
     {
-      "src": "logo.png",
-      "type": "image/x-icon"
+      "src": "canonshuttershots_icon.png",
+      "type": "image/png",
+      "sizes": "1254x1254"
     },
     {
-      "src": "logo.png",
-      "type": "image/png"
-      
+      "src": "canonshuttershots_logo.png",
+      "type": "image/png",
+      "sizes": "1254x1254"
     },
     {
-      "src": "logo.png",
-      "type": "image/png"
-      
+      "src": "canonshuttershots_icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
