@@ -52,6 +52,31 @@
     line-height: 1.7;
 }
 
+.gallery-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.gallery-tags a{
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 999px;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-tags a:hover{
+    background: color-mix(in srgb, var(--gallery-accent) 22%, transparent);
+    border-color: var(--gallery-accent);
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
 .gallery-body{
     background:
         radial-gradient(circle at 8% 0%, color-mix(in srgb, var(--gallery-accent) 12%, transparent), transparent 26%),
@@ -71,6 +96,7 @@
     break-inside: avoid;
     margin: 0 0 22px;
     overflow: hidden;
+    position: relative;
 }
 
 .gallery-tile img{
@@ -82,6 +108,38 @@
 
 .gallery-tile:hover img{
     transform: scale(1.035);
+}
+
+.gallery-tile figcaption{
+    align-items: flex-start;
+    background: linear-gradient(180deg, rgba(13, 17, 23, 0.02), rgba(13, 17, 23, 0.88));
+    bottom: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    left: 0;
+    opacity: 0;
+    padding: 48px 18px 18px;
+    position: absolute;
+    right: 0;
+    transform: translateY(16px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.gallery-tile:hover figcaption,
+.gallery-tile:focus-within figcaption{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-tile figcaption strong{
+    font-size: 1rem;
+}
+
+.gallery-tile figcaption span{
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 0.88rem;
 }
 
 @media (max-width: 991.98px){

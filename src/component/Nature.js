@@ -14,17 +14,23 @@ import nr12 from '../images/nature/nr12.JPG';
 import banner from '../images/banner.jpeg';
 
 const images = [
-    { src: nr1, alt: 'Nature frame from Kandy' },
-    { src: nr2, alt: 'Nature detail in soft light' },
-    { src: nr3, alt: 'Nature landscape frame' },
-    { src: hero1, alt: 'Sunflower field at golden hour' },
-    { src: nr5, alt: 'Munnar nature view' },
-    { src: nr4, alt: 'Bangalore nature frame' },
-    { src: nr12, alt: 'Hampi nature frame' },
-    { src: nr7, alt: 'Vellore nature frame' },
-    { src: banner, alt: 'Wide nature banner landscape' },
-    { src: nr6, alt: 'Nature scene in Bangalore' },
-    { src: nr11, alt: 'Hampi landscape detail' },
+    { src: nr1, alt: 'Nature frame from Kandy', location: 'Kandy, Sri Lanka', camera: 'Canon EOS' },
+    { src: nr2, alt: 'Nature detail in soft light', location: 'Kandy, Sri Lanka', camera: 'Canon EOS' },
+    { src: nr3, alt: 'Nature landscape frame', location: 'Kandy, Sri Lanka', camera: 'Canon EOS' },
+    { src: hero1, alt: 'Sunflower field at golden hour', location: 'Bangalore, India', camera: 'Canon EOS' },
+    { src: nr5, alt: 'Munnar nature view', location: 'Munnar, India', camera: 'Canon EOS' },
+    { src: nr4, alt: 'Bangalore nature frame', location: 'Bangalore, India', camera: 'Canon EOS' },
+    { src: nr12, alt: 'Hampi nature frame', location: 'Hampi, India', camera: 'Canon EOS' },
+    { src: nr7, alt: 'Vellore nature frame', location: 'Vellore, India', camera: 'Canon EOS' },
+    { src: banner, alt: 'Wide nature banner landscape', location: 'Hampi, India', camera: 'Canon EOS' },
+    { src: nr6, alt: 'Nature scene in Bangalore', location: 'Bangalore, India', camera: 'Canon EOS' },
+    { src: nr11, alt: 'Hampi landscape detail', location: 'Hampi, India', camera: 'Canon EOS' },
+];
+
+const relatedGalleries = [
+    { label: 'People', href: 'https://shulinsaraswat.github.io/canonshuttershots-people' },
+    { label: 'Places', href: 'https://shulinsaraswat.github.io/canonshuttershots-place' },
+    { label: 'Wildlife', href: 'https://shulinsaraswat.github.io/canonshuttershots-wildlife' },
 ];
 
 export default function Nature(){
@@ -37,6 +43,7 @@ export default function Nature(){
             coverAlt="Flower detail for the Nature gallery"
             accent="var(--fresh-green)"
             images={images}
+            relatedGalleries={relatedGalleries}
         />
     );
 }

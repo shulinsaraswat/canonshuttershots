@@ -6,8 +6,10 @@ import App from './App';
 import Main from './component/Main';
 import reportWebVitals from './reportWebVitals';
 import Nature from './component/Nature';
+import ScrollToTop from './component/ScrollToTop';
 
 const routes=<Router>
+  <ScrollToTop />
   <Routes>
     <Route path='/' element={<App><Main /></App>}/>
     <Route path='/nature' element={<App><Nature /></App>}/>

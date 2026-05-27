@@ -37,8 +37,11 @@ html{
 }
 
 .portfolio-nav .nav-link{
+    align-items: center;
     border-radius: 999px;
     color: var(--muted);
+    display: inline-flex;
+    gap: 7px;
     font-weight: 750;
     letter-spacing: 0.01em;
     padding: 8px 12px;
@@ -70,6 +73,72 @@ html{
     margin-left: 10px;
     margin-right: 0;
     padding: 0;
+}
+
+.portfolio-menu{
+    position: relative;
+}
+
+.portfolio-dropdown{
+    background: color-mix(in srgb, var(--surface) 94%, transparent);
+    backdrop-filter: blur(18px);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 6px;
+    left: 50%;
+    min-width: 230px;
+    opacity: 0;
+    padding: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: calc(100% + 14px);
+    transform: translate(-50%, 8px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.portfolio-menu:hover .portfolio-dropdown,
+.portfolio-menu:focus-within .portfolio-dropdown{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+}
+
+.portfolio-dropdown a{
+    border-radius: 8px;
+    color: var(--text);
+    display: grid;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.portfolio-dropdown a:hover,
+.portfolio-dropdown .active-gallery{
+    background: color-mix(in srgb, var(--electric-blue) 16%, transparent);
+    color: var(--electric-blue);
+    text-decoration: none;
+}
+
+.portfolio-dropdown .disabled-gallery{
+    cursor: default;
+    opacity: 0.46;
+}
+
+.portfolio-dropdown .disabled-gallery:hover{
+    background: transparent;
+    color: var(--text);
+}
+
+.portfolio-dropdown span{
+    font-weight: 800;
+}
+
+.portfolio-dropdown small{
+    color: var(--muted);
+    font-size: 0.76rem;
+    margin-top: 2px;
+    text-transform: capitalize;
 }
 
 .theme-toggle{
@@ -135,6 +204,15 @@ html{
 
     .portfolio-nav .nav-link{
         padding: 10px 12px;
+    }
+
+    .portfolio-dropdown{
+        left: 0;
+        position: static;
+        transform: none;
+        margin: 6px 0 8px;
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .theme-toggle span{

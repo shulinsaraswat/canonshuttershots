@@ -10,6 +10,13 @@ const navItems = [
     { id: 'contact', label: 'Contact' },
 ];
 
+const galleryItems = [
+    { path: '/nature', label: 'Nature', description: 'Open gallery' },
+    { path: 'https://shulinsaraswat.github.io/canonshuttershots-people', label: 'People', description: 'Standalone gallery' },
+    { path: 'https://shulinsaraswat.github.io/canonshuttershots-place', label: 'Places', description: 'Standalone gallery' },
+    { path: 'https://shulinsaraswat.github.io/canonshuttershots-wildlife', label: 'Wildlife', description: 'Standalone gallery' },
+];
+
 export default function Navbar({ theme, onToggleTheme }){
     const location = useLocation();
     const navigate = useNavigate();
@@ -64,6 +71,17 @@ export default function Navbar({ theme, onToggleTheme }){
         scrollToSection(sectionId);
     };
 
+    const handleGalleryClick = (event, gallery) => {
+        event.preventDefault();
+
+        if(gallery.path.startsWith('http')){
+            window.location.href = gallery.path;
+            return;
+        }
+
+        navigate(gallery.path);
+    };
+
     return(
         <nav className="navbar navbar-expand-lg portfolio-nav">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,15 +92,47 @@ export default function Navbar({ theme, onToggleTheme }){
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     {navItems.map((item) => (
                         <li className="nav-item" key={item.id}>
-                            <a
-                                className={`nav-link${activeSection === item.id ? ' selected' : ''}`}
-                                href={`#${item.id}`}
-                                aria-current={activeSection === item.id ? 'page' : undefined}
-                                onClick={(event) => handleNavClick(event, item.id)}
-                            >
-                                {item.label}
-                                {activeSection === item.id && <span className="sr-only"> (current)</span>}
-                            </a>
+                            {item.id === 'portfolio' ? (
+                                <div className="portfolio-menu">
+                                    <a
+                                        className={`nav-link${activeSection === item.id ? ' selected' : ''}`}
+                                        href="#portfolio"
+                                        aria-current={activeSection === item.id ? 'page' : undefined}
+                                        onClick={(event) => handleNavClick(event, item.id)}
+                                    >
+                                        {item.label}
+                                        <i className="fa fa-angle-down" aria-hidden="true"></i>
+                                        {activeSection === item.id && <span className="sr-only"> (current)</span>}
+                                    </a>
+                                    <div className="portfolio-dropdown" aria-label="Portfolio galleries">
+                                        {galleryItems.map((gallery) => {
+                                            const isActiveGallery = location.pathname === gallery.path;
+                                            return (
+                                                <a
+                                                    className={isActiveGallery ? 'active-gallery' : ''}
+                                                    href={gallery.path.startsWith('http') ? gallery.path : `#${gallery.path}`}
+                                                    key={gallery.path}
+                                                    onClick={(event) => handleGalleryClick(event, gallery)}
+                                                    aria-current={isActiveGallery ? 'page' : undefined}
+                                                >
+                                                    <span>{gallery.label}</span>
+                                                    <small>{gallery.description}</small>
+                                                </a>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            ) : (
+                                <a
+                                    className={`nav-link${activeSection === item.id ? ' selected' : ''}`}
+                                    href={`#${item.id}`}
+                                    aria-current={activeSection === item.id ? 'page' : undefined}
+                                    onClick={(event) => handleNavClick(event, item.id)}
+                                >
+                                    {item.label}
+                                    {activeSection === item.id && <span className="sr-only"> (current)</span>}
+                                </a>
+                            )}
                         </li>
                     ))}
                 </ul>

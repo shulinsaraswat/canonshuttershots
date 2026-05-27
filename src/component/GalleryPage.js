@@ -9,6 +9,7 @@ export default function GalleryPage({
     coverAlt,
     accent = 'var(--fresh-green)',
     images,
+    relatedGalleries = [],
 }) {
     return (
         <main className="gallery-page" style={{ '--gallery-accent': accent }}>
@@ -19,6 +20,13 @@ export default function GalleryPage({
                     <p className="section-kicker">{eyebrow}</p>
                     <h1>{title}</h1>
                     <p>{description}</p>
+                    {relatedGalleries.length > 0 && (
+                        <div className="gallery-tags" aria-label="Other galleries">
+                            {relatedGalleries.map((gallery) => (
+                                <a href={gallery.href} key={gallery.label}>{gallery.label}</a>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </section>
 
@@ -33,6 +41,10 @@ export default function GalleryPage({
                         {images.map((image, index) => (
                             <figure className="gallery-tile" key={`${image.alt}-${index}`}>
                                 <img src={image.src} alt={image.alt} loading="lazy" />
+                                <figcaption>
+                                    <strong>{image.location}</strong>
+                                    <span>{image.camera}</span>
+                                </figcaption>
                             </figure>
                         ))}
                     </div>
