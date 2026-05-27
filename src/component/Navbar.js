@@ -27,7 +27,7 @@ export default class Navbar extends Component{
             nav.classList.toggle("nav-scrolled", window.scrollY > 80);
         }
 
-        const isAtPageBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8;
+        const isAtPageBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 120;
         const scrollTarget = window.scrollY + 140;
         const currentSection = isAtPageBottom ? 'contact' : this.navItems.reduce((active, item) => {
             const section = document.getElementById(item.id);
