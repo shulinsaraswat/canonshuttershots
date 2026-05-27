@@ -31,7 +31,7 @@ export default class Navbar extends Component{
         const { theme, onToggleTheme } = this.props;
 
         return(
-            <nav className="navbar navbar-expand-lg sticky-top portfolio-nav">
+            <nav className="navbar navbar-expand-lg portfolio-nav">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -56,7 +56,7 @@ export default class Navbar extends Component{
                     <i className={`fa ${theme === 'dark' ? 'fa-sun-o' : 'fa-moon-o'}`} aria-hidden="true"></i>
                     <span>{theme === 'dark' ? 'Light' : 'Dark'}</span>
                 </button>
-                <a className="navbar-brand" href="/">
+                <a className="navbar-brand" href="#home" aria-label="Canon Shuttershots home">
                     <img className="brand-logo" src={logo} alt="Canon Shuttershots logo" loading="lazy"/>
                 </a>
             </nav>

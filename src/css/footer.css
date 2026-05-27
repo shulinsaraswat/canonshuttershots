@@ -2,7 +2,7 @@
     background: var(--bg);
     border-top: 1px solid var(--border);
     color: var(--muted);
-    padding: 28px 0;
+    padding: 22px 34px;
 }
 
 .footer-inner{
@@ -10,9 +10,11 @@
     display: flex;
     gap: 18px;
     justify-content: space-between;
+    width: 100%;
 }
 
 .footer-inner img{
+    border-radius: 50%;
     height: 48px;
     object-fit: contain;
     width: 48px;
@@ -31,6 +33,10 @@
 }
 
 @media (max-width: 767.98px){
+    .site-footer{
+        padding: 22px 20px;
+    }
+
     .footer-inner{
         align-items: flex-start;
         flex-direction: column;

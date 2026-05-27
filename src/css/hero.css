@@ -1,12 +1,21 @@
 .hero-section{
     color: #ffffff;
-    min-height: calc(100vh - 78px);
+    height: 100vh;
+    min-height: 760px;
     overflow: hidden;
     position: relative;
 }
 
+.hero-section .react-parallax{
+    height: 100%;
+}
+
+.hero-section .react-parallax-content{
+    height: 100%;
+}
+
 .hero-frame{
-    height: 700px;
+    height: 100%;
     position: relative;
 }
 
@@ -23,7 +32,7 @@
     left: 8%;
     max-width: 660px;
     position: absolute;
-    top: 50%;
+    top: 54%;
     transform: translateY(-50%);
 }
 
@@ -31,11 +40,11 @@
     background: rgba(255, 255, 255, 0.92);
     border-radius: 50%;
     box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
-    height: 104px;
-    margin-bottom: 22px;
+    height: 92px;
+    margin-bottom: 18px;
     object-fit: contain;
     padding: 7px;
-    width: 104px;
+    width: 92px;
 }
 
 .welcome{
@@ -179,11 +188,11 @@
 
 @media (max-width: 768.98px){
     .hero-section{
-        min-height: 640px;
+        min-height: 760px;
     }
 
     .hero-frame{
-        height: 640px;
+        height: 100%;
     }
 
     .hero-shade{
@@ -195,6 +204,7 @@
         max-width: calc(100% - 48px);
         right: 24px;
         text-align: left;
+        top: 53%;
     }
 
     .hero-logo{
@@ -220,6 +230,10 @@
 }
 
 @media (max-width: 420px){
+    .hero-section{
+        min-height: 820px;
+    }
+
     .heading-hero{
         font-size: 2.35rem;
     }

@@ -4,38 +4,52 @@ html{
 
 .portfolio-nav{
     align-items: center;
+    background: color-mix(in srgb, var(--bg) 72%, transparent);
     backdrop-filter: blur(18px);
-    background: color-mix(in srgb, var(--bg) 88%, transparent);
-    border-bottom: 1px solid var(--border);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
-    min-height: 78px;
-    padding: 8px 34px;
-    transition: background 0.25s ease, border-color 0.25s ease;
+    border: 1px solid color-mix(in srgb, var(--border) 72%, transparent);
+    border-radius: 999px;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+    left: 24px;
+    min-height: 58px;
+    padding: 6px 10px 6px 18px;
+    position: fixed;
+    right: 24px;
+    top: 18px;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+    z-index: 1000;
 }
 
 .portfolio-nav.nav-scrolled{
-    background: color-mix(in srgb, var(--bg) 94%, transparent);
+    background: color-mix(in srgb, var(--bg) 90%, transparent);
+    transform: translateY(-4px);
+}
+
+.navbar-nav{
+    align-items: center;
 }
 
 .navbar-nav > li{
-    font-size: 1rem;
-    padding-left: 14px;
-    padding-right: 14px;
+    font-size: 0.95rem;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .portfolio-nav .nav-link{
+    border-radius: 999px;
     color: var(--muted);
-    font-weight: 650;
+    font-weight: 750;
     letter-spacing: 0.01em;
+    padding: 9px 14px;
 }
 
 .portfolio-nav .selected,
 .portfolio-nav .nav-link:hover{
+    background: color-mix(in srgb, var(--electric-blue) 14%, transparent);
     color: var(--electric-blue);
 }
 
 .portfolio-nav .selected{
-    border-bottom: 2px solid var(--electric-blue);
+    border-bottom: 0;
 }
 
 .navbar-nav>li:hover,
@@ -44,9 +58,16 @@ html{
 }
 
 .brand-logo{
-    height: 54px;
-    object-fit: contain;
-    width: 54px;
+    border-radius: 50%;
+    height: 42px;
+    object-fit: cover;
+    width: 42px;
+}
+
+.navbar-brand{
+    margin-left: 10px;
+    margin-right: 0;
+    padding: 0;
 }
 
 .theme-toggle{
@@ -56,10 +77,11 @@ html{
     border-radius: 999px;
     color: var(--text);
     display: inline-flex;
+    font-size: 0.92rem;
     font-weight: 750;
     gap: 8px;
-    margin-right: 18px;
-    padding: 9px 14px;
+    margin-left: auto;
+    padding: 8px 13px;
     transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
@@ -71,6 +93,8 @@ html{
 
 .navbar-toggler{
     border-color: var(--border);
+    border-radius: 8px;
+    padding: 6px 10px;
 }
 
 .navbar-toggler-icon{
@@ -79,7 +103,9 @@ html{
     color: var(--text);
     display: flex;
     filter: none;
+    height: 22px;
     justify-content: center;
+    width: 22px;
 }
 
 .navbar-toggler-icon::before{
@@ -87,13 +113,24 @@ html{
     font-family: FontAwesome;
 }
 
-.hide{
-    display: none;
-}
-
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
     .portfolio-nav{
-        padding: 10px 16px;
+        border-radius: 18px;
+        left: 14px;
+        padding: 8px 10px;
+        right: 14px;
+        top: 12px;
+    }
+
+    .portfolio-nav .navbar-collapse{
+        border-top: 1px solid var(--border);
+        flex-basis: 100%;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .portfolio-nav .nav-link{
+        padding: 10px 12px;
     }
 
     .theme-toggle span{
@@ -102,11 +139,6 @@ html{
 
     .theme-toggle{
         margin-left: auto;
-        margin-right: 12px;
-    }
-
-    .brand-logo{
-        height: 48px;
-        width: 48px;
+        margin-right: 10px;
     }
 }

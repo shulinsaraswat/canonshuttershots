@@ -6,7 +6,6 @@ const links = [
     { href: 'https://shulinsaraswat.github.io/ss/', icon: 'fa-desktop', label: 'Personal site' },
     { href: 'https://www.linkedin.com/in/shulinsaraswat/', icon: 'fa-linkedin-square', label: 'LinkedIn' },
     { href: 'mailto:shulin.saraswat5@gmail.com', icon: 'fa-envelope', label: 'Email' },
-    { href: 'https://www.quora.com/profile/Shulin-Saraswat-2', icon: 'fa-quora', label: 'Quora' },
 ];
 
 export default class Contact extends Component{

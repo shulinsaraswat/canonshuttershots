@@ -47,6 +47,7 @@ body{
 
 .section-shell{
   padding: 76px 0;
+  scroll-margin-top: 92px;
 }
 
 .section-kicker{

@@ -36,7 +36,7 @@ export default function Hero(){
                 <div className="hero-stats" aria-label="Portfolio highlights">
                     <span><strong>04</strong>Collections</span>
                     <span><strong>Nature</strong>First love</span>
-                    <span><strong>Canon</strong>Shuttershots</span>
+                    <span><strong>Light</strong>Driven</span>
                 </div>                    
             </div>
             <a href="#about">
