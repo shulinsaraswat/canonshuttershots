@@ -1,24 +1,30 @@
 {
   "files": {
     "main.css": "/canonshuttershots/static/css/main.65e6800c.css",
-    "main.js": "/canonshuttershots/static/js/main.726ca8f8.js",
+    "main.js": "/canonshuttershots/static/js/main.cd182685.js",
     "static/js/488.142c1fac.chunk.js": "/canonshuttershots/static/js/488.142c1fac.chunk.js",
     "static/media/pp2.jpeg": "/canonshuttershots/static/media/pp2.eaacd9cca65d01769b6f.jpeg",
     "static/media/nr6.jpeg": "/canonshuttershots/static/media/nr6.b07b19cbb771ba8bd622.jpeg",
     "static/media/nr4.jpeg": "/canonshuttershots/static/media/nr4.2d44256689fc588bbb10.jpeg",
     "static/media/pp1.jpeg": "/canonshuttershots/static/media/pp1.6d789cb712105e54f8fc.jpeg",
     "static/media/hero2.jpeg": "/canonshuttershots/static/media/hero2.ac9811d59dc83fd514b9.jpeg",
+    "static/media/pl5.jpeg": "/canonshuttershots/static/media/pl5.8810718e368fffc0f6d0.jpeg",
     "static/media/nr7.jpeg": "/canonshuttershots/static/media/nr7.dfa6b47d804c94420437.jpeg",
+    "static/media/pl3.jpeg": "/canonshuttershots/static/media/pl3.e2b47ebdcf0ce8751eb7.jpeg",
     "static/media/canonshuttershots_logo.png": "/canonshuttershots/static/media/canonshuttershots_logo.a3498306fe45e88e9239.png",
+    "static/media/pl4.jpeg": "/canonshuttershots/static/media/pl4.f1a1f2a016b12ec5d6cd.jpeg",
     "static/media/pp10.jpeg": "/canonshuttershots/static/media/pp10.ea9db302f67628ea3adc.jpeg",
     "static/media/pp9.jpeg": "/canonshuttershots/static/media/pp9.1de9972f10042aa52785.jpeg",
     "static/media/nr2.jpeg": "/canonshuttershots/static/media/nr2.411f2115872ec81e81b1.jpeg",
     "static/media/nr11.jpeg": "/canonshuttershots/static/media/nr11.5354c8753c1fb045feb1.jpeg",
     "static/media/pp7.jpeg": "/canonshuttershots/static/media/pp7.226977983696c447fdb9.jpeg",
+    "static/media/pl2.jpeg": "/canonshuttershots/static/media/pl2.c34cf0887d3a66e9b568.jpeg",
+    "static/media/pl6.jpeg": "/canonshuttershots/static/media/pl6.ca1a2bb538c9b3baba97.jpeg",
     "static/media/people.jpeg": "/canonshuttershots/static/media/people.c966df0c65740f80daa9.jpeg",
     "static/media/pp12.jpeg": "/canonshuttershots/static/media/pp12.80234d8a794362db3ce8.jpeg",
     "static/media/place.jpeg": "/canonshuttershots/static/media/place.f7edc9fbc26e0d9adc25.jpeg",
     "static/media/nr3.jpeg": "/canonshuttershots/static/media/nr3.451d1ee8200ff91bcb0b.jpeg",
+    "static/media/pl1.jpeg": "/canonshuttershots/static/media/pl1.67954c14996f4f4d7af3.jpeg",
     "static/media/nr12.JPG": "/canonshuttershots/static/media/nr12.5e3dd2334cae227f522e.JPG",
     "static/media/pp14.jpeg": "/canonshuttershots/static/media/pp14.2a060a1bf120df303388.jpeg",
     "static/media/pp3.jpeg": "/canonshuttershots/static/media/pp3.68ae08855e9977c195d1.jpeg",
@@ -39,11 +45,11 @@
     "static/media/nr1.jpg": "/canonshuttershots/static/media/nr1.3ea34dcae02e5b53a787.jpg",
     "index.html": "/canonshuttershots/index.html",
     "main.65e6800c.css.map": "/canonshuttershots/static/css/main.65e6800c.css.map",
-    "main.726ca8f8.js.map": "/canonshuttershots/static/js/main.726ca8f8.js.map",
+    "main.cd182685.js.map": "/canonshuttershots/static/js/main.cd182685.js.map",
     "488.142c1fac.chunk.js.map": "/canonshuttershots/static/js/488.142c1fac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65e6800c.css",
-    "static/js/main.726ca8f8.js"
+    "static/js/main.cd182685.js"
   ]
 }
