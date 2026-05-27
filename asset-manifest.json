@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/canonshuttershots/static/css/main.a69f6c72.css",
-    "main.js": "/canonshuttershots/static/js/main.50df1785.js",
+    "main.css": "/canonshuttershots/static/css/main.65e6800c.css",
+    "main.js": "/canonshuttershots/static/js/main.726ca8f8.js",
     "static/js/488.142c1fac.chunk.js": "/canonshuttershots/static/js/488.142c1fac.chunk.js",
     "static/media/pp2.jpeg": "/canonshuttershots/static/media/pp2.eaacd9cca65d01769b6f.jpeg",
     "static/media/nr6.jpeg": "/canonshuttershots/static/media/nr6.b07b19cbb771ba8bd622.jpeg",
@@ -38,12 +38,12 @@
     "static/media/wildlife.jpg": "/canonshuttershots/static/media/wildlife.2ab06f7acb953fff9d1f.jpg",
     "static/media/nr1.jpg": "/canonshuttershots/static/media/nr1.3ea34dcae02e5b53a787.jpg",
     "index.html": "/canonshuttershots/index.html",
-    "main.a69f6c72.css.map": "/canonshuttershots/static/css/main.a69f6c72.css.map",
-    "main.50df1785.js.map": "/canonshuttershots/static/js/main.50df1785.js.map",
+    "main.65e6800c.css.map": "/canonshuttershots/static/css/main.65e6800c.css.map",
+    "main.726ca8f8.js.map": "/canonshuttershots/static/js/main.726ca8f8.js.map",
     "488.142c1fac.chunk.js.map": "/canonshuttershots/static/js/488.142c1fac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a69f6c72.css",
-    "static/js/main.50df1785.js"
+    "static/css/main.65e6800c.css",
+    "static/js/main.726ca8f8.js"
   ]
 }
