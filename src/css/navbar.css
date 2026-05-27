@@ -74,7 +74,17 @@ html{
 }
 
 .navbar-toggler-icon{
-    filter: invert(0.5);
+    align-items: center;
+    background-image: none;
+    color: var(--text);
+    display: flex;
+    filter: none;
+    justify-content: center;
+}
+
+.navbar-toggler-icon::before{
+    content: "\f0c9";
+    font-family: FontAwesome;
 }
 
 .hide{
