@@ -3,32 +3,48 @@ import logo from '../images/canonshuttershots_logo.png';
 import '../css/navbar.css';
 
 export default class Navbar extends Component{
+    state = {
+        activeSection: 'home',
+    };
+
+    navItems = [
+        { id: 'home', label: 'Home' },
+        { id: 'about', label: 'About' },
+        { id: 'portfolio', label: 'Portfolio' },
+        { id: 'contact', label: 'Contact' },
+    ];
 
     componentDidMount(){
         window.addEventListener("scroll", this.handleScroll);
-
-        var header= document.getElementById("navbarTogglerDemo02")
-        var btns= header.getElementsByClassName("nav-link");
-        for(var i=0; i<btns.length; i++){
-            btns[i].addEventListener("click", function(){
-                var current=document.getElementsByClassName("selected");
-                current[0].className=current[0].className.replace("selected","");
-                this.className+=" selected";
-            });
-        }
+        this.handleScroll();
     } 
     componentWillUnmount(){
-        window.removeEventListener("Scroll", this.handleScroll);
+        window.removeEventListener("scroll", this.handleScroll);
     }
     handleScroll=()=>{
         const nav = document.querySelector(".portfolio-nav");
         if(nav){
             nav.classList.toggle("nav-scrolled", window.scrollY > 80);
         }
+
+        const isAtPageBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8;
+        const scrollTarget = window.scrollY + 140;
+        const currentSection = isAtPageBottom ? 'contact' : this.navItems.reduce((active, item) => {
+            const section = document.getElementById(item.id);
+            if(section && section.offsetTop <= scrollTarget){
+                return item.id;
+            }
+            return active;
+        }, 'home');
+
+        if(currentSection !== this.state.activeSection){
+            this.setState({ activeSection: currentSection });
+        }
     }
 
     render(){
         const { theme, onToggleTheme } = this.props;
+        const { activeSection } = this.state;
 
         return(
             <nav className="navbar navbar-expand-lg portfolio-nav">
@@ -38,18 +54,18 @@ export default class Navbar extends Component{
 
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li className="nav-item">
-                            <a className="nav-link selected" href="#home">Home <span className="sr-only">(current)</span></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#about">About</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#contact">Contact</a>
-                        </li>
+                        {this.navItems.map((item) => (
+                            <li className="nav-item" key={item.id}>
+                                <a
+                                    className={`nav-link${activeSection === item.id ? ' selected' : ''}`}
+                                    href={`#${item.id}`}
+                                    aria-current={activeSection === item.id ? 'page' : undefined}
+                                >
+                                    {item.label}
+                                    {activeSection === item.id && <span className="sr-only"> (current)</span>}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <button className="theme-toggle" type="button" onClick={onToggleTheme} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}>

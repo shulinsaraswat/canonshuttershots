@@ -43,12 +43,12 @@
     position: absolute;
 }
 
-.portfolio-card-overlay::before{
+.portfolio-card-overlay::after{
     background: var(--card-accent);
     border-radius: 999px;
     content: "";
     height: 4px;
-    margin-bottom: 18px;
+    margin-top: 18px;
     width: 54px;
 }
 
@@ -75,6 +75,7 @@
 
 .portfolio-card strong{
     color: #ffffff;
+    display: inline-block;
 }
 
 .portfolio-card:hover img{
