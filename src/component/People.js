@@ -40,7 +40,7 @@ const images = [
 
 const relatedGalleries = [
     { label: 'Nature', href: '#/nature' },
-    { label: 'Places', href: 'https://shulinsaraswat.github.io/canonshuttershots-place' },
+    { label: 'Places', href: '#/places' },
     { label: 'Wildlife', href: 'https://shulinsaraswat.github.io/canonshuttershots-wildlife' },
 ];
 

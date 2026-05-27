@@ -7,6 +7,7 @@ import Main from './component/Main';
 import reportWebVitals from './reportWebVitals';
 import Nature from './component/Nature';
 import People from './component/People';
+import Place from './component/Place';
 import ScrollToTop from './component/ScrollToTop';
 
 const routes=<Router>
@@ -15,6 +16,8 @@ const routes=<Router>
     <Route path='/' element={<App><Main /></App>}/>
     <Route path='/nature' element={<App><Nature /></App>}/>
     <Route path='/people' element={<App><People /></App>}/>
+    <Route path='/places' element={<App><Place /></App>}/>
+    <Route path='/place' element={<Navigate to='/places' replace />}/>
     <Route path='*' element={<Navigate to='/' replace />}/>
   </Routes>
 </Router>

@@ -30,7 +30,7 @@ const collections = [
         description: 'Corners of cities and landscapes that hold a sense of movement, discovery, and atmosphere.',
         image: place,
         alt: 'Place collection preview',
-        href: 'https://shulinsaraswat.github.io/canonshuttershots-place',
+        href: '#/places',
         accent: 'var(--electric-blue)',
     },
     {

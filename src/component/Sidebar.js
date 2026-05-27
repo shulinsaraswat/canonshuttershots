@@ -37,7 +37,7 @@ export default class Sidebar extends Component{
             <div id="mySidebar" className="sidebar" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
                 <a className="btnSide" href="#/nature"><span><i className="material-icons "><NatureIcon/></i></span><span className="icon-text"> &emsp;Nature</span></a><br/>
                 <a className="btnSide" href="#/people"><span><i className="material-icons "><PeopleAltIcon/></i></span><span className="icon-text"> &emsp;People</span></a><br/>
-                <a className="btnSide" href="https://shulinsaraswat.github.io/canonshuttershots-place"><span><i className="material-icons "><PlaceIcon/></i></span><span className="icon-text"> &emsp;Place</span></a><br/>
+                <a className="btnSide" href="#/places"><span><i className="material-icons "><PlaceIcon/></i></span><span className="icon-text"> &emsp;Place</span></a><br/>
                 <a className="btnSide" href="https://shulinsaraswat.github.io/canonshuttershots-wildlife"><span><i className="material-icons "><PetsIcon/></i></span><span className="icon-text"> &emsp;Wildlife</span></a><br/>
                 <a className="btnSide" href="#/"><span><i className="material-icons "><HomeIcon/></i></span><span className="icon-text"> &emsp;Home</span></a><br/>
             </div>
