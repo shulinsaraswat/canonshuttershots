@@ -22,6 +22,7 @@ export default function Navbar({ theme, onToggleTheme }){
     const navigate = useNavigate();
     const isHome = location.pathname === '/';
     const [activeSection, setActiveSection] = useState(isHome ? 'home' : 'portfolio');
+    const [isPortfolioMenuClosed, setIsPortfolioMenuClosed] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -73,6 +74,7 @@ export default function Navbar({ theme, onToggleTheme }){
 
     const handleGalleryClick = (event, gallery) => {
         event.preventDefault();
+        setIsPortfolioMenuClosed(true);
 
         if(gallery.path.startsWith('http')){
             window.location.href = gallery.path;
@@ -93,7 +95,11 @@ export default function Navbar({ theme, onToggleTheme }){
                     {navItems.map((item) => (
                         <li className="nav-item" key={item.id}>
                             {item.id === 'portfolio' ? (
-                                <div className="portfolio-menu">
+                                <div
+                                    className={`portfolio-menu${isPortfolioMenuClosed ? ' dropdown-closed' : ''}`}
+                                    onMouseLeave={() => setIsPortfolioMenuClosed(false)}
+                                    onFocus={() => setIsPortfolioMenuClosed(false)}
+                                >
                                     <a
                                         className={`nav-link${activeSection === item.id ? ' selected' : ''}`}
                                         href="#portfolio"

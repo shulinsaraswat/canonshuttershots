@@ -79,6 +79,15 @@ html{
     position: relative;
 }
 
+.portfolio-menu::after{
+    content: "";
+    height: 18px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+
 .portfolio-dropdown{
     background: color-mix(in srgb, var(--surface) 94%, transparent);
     backdrop-filter: blur(18px);
@@ -93,7 +102,7 @@ html{
     padding: 10px;
     pointer-events: none;
     position: absolute;
-    top: calc(100% + 14px);
+    top: calc(100% + 10px);
     transform: translate(-50%, 8px);
     transition: opacity 0.18s ease, transform 0.18s ease;
 }
@@ -103,6 +112,14 @@ html{
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, 0);
+}
+
+.portfolio-menu.dropdown-closed .portfolio-dropdown,
+.portfolio-menu.dropdown-closed:hover .portfolio-dropdown,
+.portfolio-menu.dropdown-closed:focus-within .portfolio-dropdown{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 8px);
 }
 
 .portfolio-dropdown a{
