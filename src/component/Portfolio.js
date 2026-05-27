@@ -21,7 +21,7 @@ const collections = [
         description: 'Human moments captured through expression, mood, and the small pauses between poses.',
         image: people,
         alt: 'Group portrait for the people collection',
-        href: 'https://shulinsaraswat.github.io/canonshuttershots-people',
+        href: '#/people',
         accent: 'var(--royal-purple)',
     },
     {

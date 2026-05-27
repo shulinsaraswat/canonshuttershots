@@ -1,8 +1,5 @@
-import React, {useState,useEffect} from 'react';
-import Sidebar from './Sidebar';
-import '../css/people.css';
-import Scroll from './BackTopButton';
-import NavbarSmall from './NavbarSmall';
+import React from 'react';
+import GalleryPage from './GalleryPage';
 import people from '../images/people.jpeg';
 import pp1 from '../images/people/pp1.jpeg';
 import pp2 from '../images/people/pp2.jpeg';
@@ -21,141 +18,43 @@ import pp15 from '../images/people/pp15.jpeg';
 import pp16 from '../images/people/pp16.jpeg';
 import pp17 from '../images/people/pp17.jpeg';
 
+const images = [
+    { src: pp1, alt: 'Candid people portrait', location: 'Portrait Study' },
+    { src: pp2, alt: 'People frame in natural light', location: 'Candid Frame' },
+    { src: pp3, alt: 'People portrait outdoors', location: 'Outdoor Portrait' },
+    { src: pp4, alt: 'People moment in warm light', location: 'Travel Portrait' },
+    { src: people, alt: 'Group portrait for the People gallery', location: 'Group Portrait' },
+    { src: pp6, alt: 'People portrait in profile', location: 'Portrait Study' },
+    { src: pp13, alt: 'People portrait with soft background', location: 'Candid Frame' },
+    { src: pp8, alt: 'People frame with outdoor setting', location: 'Outdoor Portrait' },
+    { src: pp9, alt: 'People portrait with natural expression', location: 'Candid Frame' },
+    { src: pp10, alt: 'People image in dramatic composition', location: 'Portrait Study' },
+    { src: pp11, alt: 'People candid image', location: 'Candid Frame' },
+    { src: pp12, alt: 'People frame in travel setting', location: 'Travel Portrait' },
+    { src: pp7, alt: 'People portrait with expressive pose', location: 'Portrait Study' },
+    { src: pp15, alt: 'People image with natural backdrop', location: 'Outdoor Portrait' },
+    { src: pp14, alt: 'People image in soft light', location: 'Candid Frame' },
+    { src: pp17, alt: 'People portrait with moody framing', location: 'Portrait Study' },
+    { src: pp16, alt: 'People portrait closing frame', location: 'Candid Frame' },
+];
+
+const relatedGalleries = [
+    { label: 'Nature', href: '#/nature' },
+    { label: 'Places', href: 'https://shulinsaraswat.github.io/canonshuttershots-place' },
+    { label: 'Wildlife', href: 'https://shulinsaraswat.github.io/canonshuttershots-wildlife' },
+];
+
 export default function People(){
-    const [isLoading, setLoading] = useState(true);
-
-  function fakeRequest() {
-    return new Promise(resolve => setTimeout(() => resolve(), 2500));
-  }
-  useEffect(() => {
-    fakeRequest().then(() => {
-      const el = document.querySelector(".loader-container");
-      if (el) {
-        el.remove();
-        setLoading(!isLoading);
-      }
-    });
-  }, []);
-
-  if (isLoading) {
-    return null;
-  }
-
-    return(
-        <div>
-            <Sidebar/>
-            <NavbarSmall/>
-            <Scroll showBelow={250} />
-            <div className="jumbotron jumbotron-fluid" 
-            style={{
-                height:'230px', 
-                //marginTop:'45px', 
-                background:' linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 35%, rgba(0,0,0,0.1) 100%),url("https://remingtonsolar.com/wp-content/uploads/banner-background.jpg") right no-repeat', 
-                marginBottom: '0', 
-                color: 'white', 
-                backgroundSize:' cover'}}> 
-                <div className="container1" > 
-                    <h2 className="display-4 banner-pp">
-                    People </h2> 
-                    <hr className="line-pp"></hr><br/>
-                </div> 
-            </div><br/>
-            <div className="background-pp">
-            <div className="container"><br/>
-            <div className="row row-cols-1 row-cols-md-3">
-                <div className="col mb-4">
-                    <div className="card box-wl">
-                    <img src={pp1} className="card-img-top" alt="People1"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp">
-                    <img src={pp2} className="card-img-top" alt="People2"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp">
-                    <img src={pp3} className="card-img-top" alt="People3"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp4">
-                    <img src={pp4} className="card-img-top" alt="People4"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp">
-                    <img src={people} className="card-img-top" alt="People5"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp6">
-                    <img src={pp6} className="card-img-top" alt="People16"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp13">
-                    <img src={pp13} className="card-img-top" alt="People7"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp">
-                    <img src={pp8} className="card-img-top" alt="People8"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp9">
-                    <img src={pp9} className="card-img-top" alt="People9"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp10">
-                    <img src={pp10} className="card-img-top" alt="People10"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp">
-                    <img src={pp11} className="card-img-top" alt="People11"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp12">
-                    <img src={pp12} className="card-img-top" alt="People12"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp7">
-                    <img src={pp7} className="card-img-top" alt="People13"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp15">
-                    <img src={pp15} className="card-img-top" alt="People14"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp14">
-                    <img src={pp14} className="card-img-top" alt="People15"/>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp17">
-                    <img src={pp17} className="card-img-top" alt="People16"/>
-                    </div>
-                </div>
-                <div className="col mb-4"></div>
-                <div className="col mb-4">
-                    <div className="card box-pp pp16">
-                    <img src={pp16} className="card-img-top" alt="People17"/>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div><hr style={{width:'75%'}}></hr>
-            <div id="footer" className="navbar" style={{ paddingBottom:'17px', backgroundColor:'#f1f1f1'}}><br/>
-                <i className="fa fa-copyright footerCR" aria-hidden="true" style={{marginLeft:'57px',position:'absolute'}}> 2020<strong> Shulin Saraswat</strong>. All Rights Reserved</i>
-                <p className="footerMade" style={{position:'relative', textAlign:'right',marginRight:'25px'}}>Made with lots of <span><i className="fa fa-heart"></i></span></p>
-            </div>
-        </div>
+    return (
+        <GalleryPage
+            title="People"
+            eyebrow="Canon Shuttershots gallery"
+            description="Portraits, candid frames, and human moments captured through expression, mood, and the small pauses between poses."
+            coverImage={people}
+            coverAlt="Group portrait for the People gallery"
+            accent="var(--royal-purple)"
+            images={images}
+            relatedGalleries={relatedGalleries}
+        />
     );
 }

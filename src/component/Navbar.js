@@ -12,7 +12,7 @@ const navItems = [
 
 const galleryItems = [
     { path: '/nature', label: 'Nature', description: 'Open gallery' },
-    { path: 'https://shulinsaraswat.github.io/canonshuttershots-people', label: 'People', description: 'Standalone gallery' },
+    { path: '/people', label: 'People', description: 'Open gallery' },
     { path: 'https://shulinsaraswat.github.io/canonshuttershots-place', label: 'Places', description: 'Standalone gallery' },
     { path: 'https://shulinsaraswat.github.io/canonshuttershots-wildlife', label: 'Wildlife', description: 'Standalone gallery' },
 ];
