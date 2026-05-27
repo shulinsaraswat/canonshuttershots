@@ -51,6 +51,7 @@
     font-family: "Archivo Black", sans-serif;
     font-size: 4.4rem;
     font-weight: 900;
+    -webkit-text-fill-color: #ffffff;
     line-height: 0.95;
     margin-bottom: 18px;
     text-shadow: 0 18px 38px rgba(0, 0, 0, 0.34);

@@ -17,7 +17,7 @@ export default function Hero(){
             <div className="hero-content">
                 <img className="hero-logo" src={logo} alt="Canon Shuttershots logo" />
                 <p className="welcome">PHOTOGRAPHY BY SHULIN SARASWAT</p>
-                <h1 className="heading-hero" data-aos="fade-left" data-aos-delay="400">Canon Shuttershots</h1>
+                <h1 className="heading-hero">Canon Shuttershots</h1>
                 <p className="hero-subtitle">Nature, people, places, and wildlife captured with patience, curiosity, and a love for honest light.</p>
                 <h2 className="typing" aria-label="Photography portfolio themes">
                 <Typewriter
