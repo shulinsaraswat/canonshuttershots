@@ -9,11 +9,13 @@ html{
     border: 1px solid color-mix(in srgb, var(--border) 72%, transparent);
     border-radius: 999px;
     box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
-    left: 24px;
-    min-height: 58px;
-    padding: 6px 10px 6px 18px;
+    left: 0;
+    margin: 0 auto;
+    max-width: 980px;
+    min-height: 52px;
+    padding: 5px 8px 5px 14px;
     position: fixed;
-    right: 24px;
+    right: 0;
     top: 18px;
     transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
     z-index: 1000;
@@ -39,7 +41,7 @@ html{
     color: var(--muted);
     font-weight: 750;
     letter-spacing: 0.01em;
-    padding: 9px 14px;
+    padding: 8px 12px;
 }
 
 .portfolio-nav .selected,
@@ -59,9 +61,9 @@ html{
 
 .brand-logo{
     border-radius: 50%;
-    height: 42px;
+    height: 36px;
     object-fit: cover;
-    width: 42px;
+    width: 36px;
 }
 
 .navbar-brand{
@@ -81,7 +83,7 @@ html{
     font-weight: 750;
     gap: 8px;
     margin-left: auto;
-    padding: 8px 13px;
+    padding: 7px 12px;
     transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
@@ -117,6 +119,8 @@ html{
     .portfolio-nav{
         border-radius: 18px;
         left: 14px;
+        margin: 0;
+        max-width: none;
         padding: 8px 10px;
         right: 14px;
         top: 12px;

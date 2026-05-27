@@ -1,7 +1,7 @@
 .hero-section{
     color: #ffffff;
     height: 100vh;
-    min-height: 760px;
+    min-height: 680px;
     overflow: hidden;
     position: relative;
 }
@@ -188,7 +188,7 @@
 
 @media (max-width: 768.98px){
     .hero-section{
-        min-height: 760px;
+        min-height: 720px;
     }
 
     .hero-frame{
@@ -231,7 +231,7 @@
 
 @media (max-width: 420px){
     .hero-section{
-        min-height: 820px;
+        min-height: 760px;
     }
 
     .heading-hero{
