@@ -21,16 +21,17 @@ export default class Navbar extends Component{
         window.removeEventListener("Scroll", this.handleScroll);
     }
     handleScroll=()=>{
-        if(window.scrollY>120){
-            document.querySelector(".navbar").className="navbar navbar-expand-lg navbar-light sticky-top active";
-        } else{
-            document.querySelector(".navbar").className="navbar navbar-expand-lg navbar-light sticky-top hide";
+        const nav = document.querySelector(".portfolio-nav");
+        if(nav){
+            nav.classList.toggle("nav-scrolled", window.scrollY > 80);
         }
     }
 
     render(){
+        const { theme, onToggleTheme } = this.props;
+
         return(
-            <nav className="navbar navbar-expand-lg navbar-light sticky-top">
+            <nav className="navbar navbar-expand-lg sticky-top portfolio-nav">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -38,7 +39,7 @@ export default class Navbar extends Component{
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link selected" href="#">Home <span className="sr-only">(current)</span></a>
+                            <a className="nav-link selected" href="#home">Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#about">About</a>
@@ -51,6 +52,10 @@ export default class Navbar extends Component{
                         </li>
                     </ul>
                 </div>
+                <button className="theme-toggle" type="button" onClick={onToggleTheme} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}>
+                    <i className={`fa ${theme === 'dark' ? 'fa-sun-o' : 'fa-moon-o'}`} aria-hidden="true"></i>
+                    <span>{theme === 'dark' ? 'Light' : 'Dark'}</span>
+                </button>
                 <a className="navbar-brand" href="/">
                     <img className="brand-logo" src={logo} alt="Canon Shuttershots logo" loading="lazy"/>
                 </a>

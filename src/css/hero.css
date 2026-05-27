@@ -1,6 +1,6 @@
 .hero-section{
     color: #ffffff;
-    min-height: 680px;
+    min-height: calc(100vh - 78px);
     overflow: hidden;
     position: relative;
 }
@@ -12,8 +12,9 @@
 
 .hero-shade{
     background:
-        linear-gradient(90deg, rgba(5, 10, 15, 0.86) 0%, rgba(5, 10, 15, 0.58) 42%, rgba(5, 10, 15, 0.20) 100%),
-        radial-gradient(circle at 24% 38%, rgba(0, 162, 200, 0.28), transparent 34%);
+        var(--hero-overlay),
+        radial-gradient(circle at 24% 38%, rgba(255, 90, 31, 0.20), transparent 34%),
+        radial-gradient(circle at 84% 86%, rgba(30, 136, 229, 0.18), transparent 30%);
     inset: 0;
     position: absolute;
 }
@@ -38,7 +39,7 @@
 }
 
 .welcome{
-    color: #f8d35b;
+    color: var(--sunshine-yellow);
     font-size: 0.86rem;
     font-weight: 800;
     letter-spacing: 0.18em;
@@ -62,7 +63,7 @@
     font-size: 1.18rem;
     line-height: 1.7;
     margin: 0 0 18px;
-    max-width: 590px;
+    max-width: 620px;
 }
 
 .typing{
@@ -73,7 +74,7 @@
 }
 
 .typing::before{
-    color: #00d4ff;
+    color: var(--electric-blue);
     content: "Frames of ";
 }
 
@@ -99,14 +100,41 @@
 }
 
 .hero-button-primary{
-    background: #00a2c8;
-    box-shadow: 0 14px 30px rgba(0, 162, 200, 0.32);
+    background: linear-gradient(135deg, var(--sunset-orange), var(--vibrant-orange));
+    box-shadow: 0 14px 30px rgba(255, 90, 31, 0.32);
     color: #ffffff;
 }
 
 .hero-button-primary:hover{
-    background: #00b7df;
+    background: linear-gradient(135deg, var(--vibrant-orange), var(--sunshine-yellow));
     color: #ffffff;
+}
+
+.hero-stats{
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 34px;
+    max-width: 580px;
+    padding-top: 22px;
+}
+
+.hero-stats span{
+    color: rgba(255, 255, 255, 0.72);
+    display: grid;
+    font-size: 0.82rem;
+    gap: 2px;
+    letter-spacing: 0.04em;
+    min-width: 120px;
+    text-transform: uppercase;
+}
+
+.hero-stats strong{
+    color: #ffffff;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    text-transform: none;
 }
 
 .hero-button-secondary{
@@ -202,5 +230,13 @@
 
     .hero-button{
         text-align: center;
+    }
+
+    .hero-stats{
+        gap: 12px;
+    }
+
+    .hero-stats span{
+        min-width: 98px;
     }
 }

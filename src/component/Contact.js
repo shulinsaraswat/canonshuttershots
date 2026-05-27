@@ -1,32 +1,34 @@
 import React, {Component} from 'react';
 import '../css/contact.css';
 
+const links = [
+    { href: 'https://www.instagram.com/canon_shuttershots/', icon: 'fa-instagram', label: 'Instagram' },
+    { href: 'https://shulinsaraswat.github.io/ss/', icon: 'fa-desktop', label: 'Personal site' },
+    { href: 'https://www.linkedin.com/in/shulinsaraswat/', icon: 'fa-linkedin-square', label: 'LinkedIn' },
+    { href: 'mailto:shulin.saraswat5@gmail.com', icon: 'fa-envelope', label: 'Email' },
+    { href: 'https://www.quora.com/profile/Shulin-Saraswat-2', icon: 'fa-quora', label: 'Quora' },
+];
+
 export default class Contact extends Component{
     render(){
         return(
-            <div id="contact" style={{paddingBottom:'17px', backgroundColor:'#f1f1f1',}} data-aos="fade-up"><br/>
-                <h2 style={{textAlign:'center'}}>CONTACT ME</h2>
-                <hr style={{width:'8%', color:'#00a2c8', backgroundColor:'#00a2c8'}}></hr><br/>
-                <div className="container icons">
-                    <ul className="list-inline">
-                        <li className="list-inline-item">
-                            <a href="https://www.instagram.com/canon_shuttershots/" target="_blank"><i className="fa fa-2x fa-instagram"></i></a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="https://shulinsaraswat.github.io/ss/" target="_blank"><i className="fa fa-2x fa-desktop"></i></a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="https://www.linkedin.com/in/shulinsaraswat/" target="_blank"><i className="fa fa-2x fa-linkedin-square"></i></a>
-                        </li>          
-                        <li className="list-inline-item">
-                            <a href="mailto: shulin.saraswat5@gmail.com" target="_blank"><i className="fa fa-2x fa-envelope"></i></a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="https://www.quora.com/profile/Shulin-Saraswat-2" target="_blank"><i className="fa fa-2x fa-quora"></i></a>
-                        </li>
-                    </ul>
+            <section id="contact" className="contact-section section-shell" data-aos="fade-up">
+                <div className="container">
+                    <div className="contact-card">
+                        <p className="section-kicker">Let us connect</p>
+                        <h2 className="section-title">Want to talk photography?</h2>
+                        <p className="section-intro">For collaborations, feedback, prints, or just a good conversation about frames and light, find me here.</p>
+                        <div className="contact-links" aria-label="Contact links">
+                            {links.map((link) => (
+                                <a href={link.href} target={link.href.startsWith('mailto:') ? undefined : '_blank'} rel={link.href.startsWith('mailto:') ? undefined : 'noreferrer'} key={link.label} aria-label={link.label}>
+                                    <i className={`fa fa-2x ${link.icon}`} aria-hidden="true"></i>
+                                    <span>{link.label}</span>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

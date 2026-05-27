@@ -1,18 +1,38 @@
-.fa-heart{
-    background-color: #00a2c8;
-    background-image:linear-gradient(45deg, white,#00a2c8);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+.site-footer{
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    padding: 28px 0;
 }
-@media (max-width: 768.98px){
-    .footerCR{
-        display:none;
-    }
-    .footerMade{
-        text-align: center;
+
+.footer-inner{
+    align-items: center;
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+}
+
+.footer-inner img{
+    height: 48px;
+    object-fit: contain;
+    width: 48px;
+}
+
+.footer-inner p{
+    margin: 0;
+}
+
+.footer-inner strong{
+    color: var(--text);
+}
+
+.footer-note{
+    color: var(--muted);
+}
+
+@media (max-width: 767.98px){
+    .footer-inner{
+        align-items: flex-start;
+        flex-direction: column;
     }
 }

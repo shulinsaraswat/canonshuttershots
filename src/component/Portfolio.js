@@ -5,67 +5,68 @@ import nature from '../images/nature.jpeg';
 import place from '../images/place.jpeg';
 import '../css/portfolio.css';
 
+const collections = [
+    {
+        title: 'Nature',
+        label: 'Light, color, stillness',
+        description: 'Fields, flowers, and landscapes framed around quiet details and changing light.',
+        image: nature,
+        alt: 'Sunlit flower for the nature collection',
+        href: 'https://shulinsaraswat.github.io/canonshuttershots-nature',
+        accent: 'var(--fresh-green)',
+    },
+    {
+        title: 'People',
+        label: 'Portraits and candid frames',
+        description: 'Human moments captured through expression, mood, and the small pauses between poses.',
+        image: people,
+        alt: 'Group portrait for the people collection',
+        href: 'https://shulinsaraswat.github.io/canonshuttershots-people',
+        accent: 'var(--royal-purple)',
+    },
+    {
+        title: 'Places',
+        label: 'Travel, texture, memory',
+        description: 'Corners of cities and landscapes that hold a sense of movement, discovery, and atmosphere.',
+        image: place,
+        alt: 'Place collection preview',
+        href: 'https://shulinsaraswat.github.io/canonshuttershots-place',
+        accent: 'var(--electric-blue)',
+    },
+    {
+        title: 'Wildlife',
+        label: 'Patience in motion',
+        description: 'Animals and natural moments held in the instant before they disappear.',
+        image: wildlife,
+        alt: 'Lion for the wildlife collection',
+        href: 'https://shulinsaraswat.github.io/canonshuttershots-wildlife',
+        accent: 'var(--sunset-orange)',
+    },
+];
+
 export default function Portfolio(){
     return(
-            <div id="portfolio" data-aos="fade-up" style={{ paddingBottom:'17px'}}><br/>
-                <h2 style={{textAlign:'center'}}>PORTFOLIO</h2>
-                <hr style={{width:'8%', color:'#00a2c8', backgroundColor:'#00a2c8'}}></hr><br/>
-                <div className="container">
-                    <div className="row row-cols-1 row-cols-md-2 box-wrap">
-                        <div className="col mb-4">
-                            <div className="card box">
-                                    <img src={nature} className="card-img-top" alt="flower for nature"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title">NATURE</h5>
-                                        <p className="card-text">"Look deep into nature, and then we will understand everything better."</p>
-                                        <a className="btn viewbtn rounded-pill shadow" href="https://shulinsaraswat.github.io/canonshuttershots-nature" 
-                                            style={{textDecoration:'none', width:'50%'}}>
-                                        <i className="fa fa-eye">&ensp;View</i>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div className="col mb-4">
-                            <div className="card box">
-                                <img src={people} className="card-img-top" alt="group"/>
-                                <div className="card-body">
-                                    <h5 className="card-title">PEOPLE</h5>
-                                    <p className="card-text">"A photograph is one that fully express what one feels, in the deepest sense, about what is being photographed."</p>
-                                    <a className="btn viewbtn rounded-pill shadow" href="https://shulinsaraswat.github.io/canonshuttershots-people" 
-                                        style={{textDecoration:'none', width:'50%'}}>
-                                        <i className="fa fa-eye">&ensp;View</i>
-                                    </a>
+        <section id="portfolio" className="portfolio-section section-shell" data-aos="fade-up">
+            <p className="section-kicker">Selected galleries</p>
+            <h2 className="section-title">Explore the portfolio</h2>
+            <p className="section-intro">Four focused collections, each built around a different rhythm of photography: observing nature, reading people, remembering places, and waiting for wildlife.</p>
+            <div className="container">
+                <div className="portfolio-grid">
+                    {collections.map((collection) => (
+                        <article className="portfolio-card" style={{'--card-accent': collection.accent}} key={collection.title}>
+                            <a href={collection.href} aria-label={`View ${collection.title} collection`}>
+                                <img src={collection.image} alt={collection.alt} />
+                                <div className="portfolio-card-overlay">
+                                    <span>{collection.label}</span>
+                                    <h3>{collection.title}</h3>
+                                    <p>{collection.description}</p>
+                                    <strong>View collection <i className="fa fa-long-arrow-right" aria-hidden="true"></i></strong>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col mb-4">
-                            <div className="card box">
-                                <img src={place} className="card-img-top" alt="place"/>
-                                <div className="card-body">
-                                    <h5 className="card-title">PLACE</h5>
-                                    <p className="card-text">"Fill up frame with feeling, energy, discovery, and risk, and leave room enough for someone else to get in there."</p>
-                                    <a className="btn viewbtn rounded-pill shadow" href="https://shulinsaraswat.github.io/canonshuttershots-place" 
-                                        style={{textDecoration:'none', width:'50%'}}>
-                                        <i className="fa fa-eye">&ensp;View</i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col mb-4">
-                            <div className="card box">
-                                <img src={wildlife} className="card-img-top" alt="lion"/>
-                                <div className="card-body">
-                                    <h5 className="card-title">WILDLIFE</h5>
-                                    <p className="card-text">"Photograph takes an instant out of time, alerting life by holding it still."</p>
-                                    <a className="btn viewbtn rounded-pill shadow" href="https://shulinsaraswat.github.io/canonshuttershots-wildlife" 
-                                        style={{textDecoration:'none', width:'50%'}}>
-                                        <i className="fa fa-eye">&ensp;View</i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            </a>
+                        </article>
+                    ))}
                 </div>
             </div>
+        </section>
     );
 }

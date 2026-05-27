@@ -8,9 +8,10 @@ export default class About extends Component{
     render(){
         return(
             // About BEGIN
-            <div id="about" className="about-section" data-aos="fade-up"><br/>
+            <section id="about" className="about-section section-shell" data-aos="fade-up">
                 <p className="section-kicker">Behind the lens</p>
-                <h2 className="about-title">ABOUT ME</h2>
+                <h2 className="section-title">Photography with patience and intent</h2>
+                <p className="section-intro">A portfolio shaped by color, timing, travel, and the quiet instinct to notice what most people walk past.</p>
                 <hr className="section-line"></hr><br/>
                 <div className="container conatinerSmall">
                     <div className="about-card" data-aos="fade-up" >
@@ -38,7 +39,7 @@ export default class About extends Component{
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

@@ -1,71 +1,46 @@
 .about-section{
-    background: #f6f7f8;
-    padding: 44px 0 52px;
-}
-
-.section-kicker{
-    color: #00a2c8;
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    margin-bottom: 8px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.about-title{
-    color: #101820;
-    font-weight: 800;
-    text-align: center;
-}
-
-.section-line{
-    background: linear-gradient(90deg, #00a2c8, #f05c21);
-    border: 0;
-    height: 3px;
-    width: 80px;
+    background: var(--surface);
 }
 
 .about-card{
-    background: #ffffff;
+    background: var(--bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
-    box-shadow: 0 18px 45px rgba(16, 24, 32, 0.12);
+    box-shadow: var(--shadow);
     overflow: hidden;
 }
 
 .about-photo{
     height: 100%;
-    min-height: 380px;
+    min-height: 430px;
     object-fit: cover;
     width: 100%;
 }
 
 .about-copy{
-    color: #26323d;
+    color: var(--muted);
     font-size: 1.02rem;
     line-height: 1.85;
-    padding: 42px 46px;
+    padding: 46px 50px;
     text-align: left;
 }
 
 .about-copy strong{
-    color: #101820;
+    color: var(--text);
 }
 
 .about-quote{
-    border-left: 4px solid #00a2c8;
-    color: #101820;
-    margin: 26px 0 0;
-    padding-left: 18px;
+    background: color-mix(in srgb, var(--surface-elevated) 78%, transparent);
+    border-left: 4px solid var(--sunset-orange);
+    border-radius: 0 8px 8px 0;
+    color: var(--text);
+    margin: 28px 0 0;
+    padding: 18px 20px;
 }
 
 @media (max-width: 767.98px){
-    .about-section{
-        padding: 32px 0 40px;
-    }
-
     .about-photo{
-        min-height: 280px;
+        min-height: 300px;
     }
 
     .about-copy{

@@ -32,6 +32,11 @@ export default function Hero(){
                 <div className="hero-actions">
                     <a className="hero-button hero-button-primary" href="#portfolio">View Portfolio</a>
                     <a className="hero-button hero-button-secondary" href="#about">About Shulin</a>
+                </div>
+                <div className="hero-stats" aria-label="Portfolio highlights">
+                    <span><strong>04</strong>Collections</span>
+                    <span><strong>Nature</strong>First love</span>
+                    <span><strong>Canon</strong>Shuttershots</span>
                 </div>                    
             </div>
             <a href="#about">
