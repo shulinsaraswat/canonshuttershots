@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import about from '../images/about.jpg';
+import logo from '../images/canonshuttershots_logo.png';
 import '../css/about.css';
 
 
@@ -17,7 +18,10 @@ export default class About extends Component{
                     <div className="about-card" data-aos="fade-up" >
                         <div className="row no-gutters align-items-stretch">
                             <div className="col-md-4">
-                                <img src={about} className="about-photo" alt="Shulin Saraswat with a camera"/>
+                                <div className="about-carousel" aria-label="About image carousel">
+                                    <img src={about} className="about-photo about-slide-one" alt="Shulin Saraswat with a camera"/>
+                                    <img src={logo} className="about-photo about-slide-two" alt="Canon Shuttershots logo"/>
+                                </div>
                             </div>
                             <div className="col-md-8">
                                 <div className="about-copy">
