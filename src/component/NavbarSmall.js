@@ -42,23 +42,23 @@ export default class NavbarSmall extends Component{
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link selected" href="/nature"><span><i className="material-icons "><NatureIcon/></i></span><span className="icon-text"> &emsp;Nature</span></a><br/>
+                            <a className="nav-link selected" href="#/nature"><span><i className="material-icons "><NatureIcon/></i></span><span className="icon-text"> &emsp;Nature</span></a><br/>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/people"><span><i className="material-icons "><PeopleAltIcon/></i></span><span className="icon-text"> &emsp;People</span></a><br/>
+                            <a className="nav-link" href="#/people"><span><i className="material-icons "><PeopleAltIcon/></i></span><span className="icon-text"> &emsp;People</span></a><br/>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/place"><span><i className="material-icons "><PlaceIcon/></i></span><span className="icon-text"> &emsp;Place</span></a><br/>
+                            <a className="nav-link" href="https://shulinsaraswat.github.io/canonshuttershots-place"><span><i className="material-icons "><PlaceIcon/></i></span><span className="icon-text"> &emsp;Place</span></a><br/>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/wildlife"><span><i className="material-icons "><PetsIcon/></i></span><span className="icon-text"> &emsp;Wildlife</span></a><br/>
+                            <a className="nav-link" href="https://shulinsaraswat.github.io/canonshuttershots-wildlife"><span><i className="material-icons "><PetsIcon/></i></span><span className="icon-text"> &emsp;Wildlife</span></a><br/>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/"><span><i className="material-icons "><HomeIcon/></i></span><span className="icon-text"> &emsp;Home Page</span></a><br/>
+                            <a className="nav-link" href="#/"><span><i className="material-icons "><HomeIcon/></i></span><span className="icon-text"> &emsp;Home Page</span></a><br/>
                         </li>
                     </ul>
                 </div>
-                <a className="navbar-brand" href="/">
+                <a className="navbar-brand" href="#/">
                     <img className="brand-logo" src={logo} alt="Canon Shuttershots logo" loading="lazy"/>
                 </a>
             </nav>

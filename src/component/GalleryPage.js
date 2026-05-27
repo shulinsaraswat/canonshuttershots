@@ -43,6 +43,7 @@ export default function GalleryPage({
                                 <img src={image.src} alt={image.alt} loading="lazy" />
                                 <figcaption>
                                     <strong>{image.location}</strong>
+                                    {image.detail && <span>{image.detail}</span>}
                                 </figcaption>
                             </figure>
                         ))}

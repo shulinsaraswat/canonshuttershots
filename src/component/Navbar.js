@@ -74,6 +74,7 @@ export default function Navbar({ theme, onToggleTheme }){
 
     const handleGalleryClick = (event, gallery) => {
         event.preventDefault();
+        event.currentTarget.blur();
         setIsPortfolioMenuClosed(true);
 
         if(gallery.path.startsWith('http')){
@@ -97,14 +98,15 @@ export default function Navbar({ theme, onToggleTheme }){
                             {item.id === 'portfolio' ? (
                                 <div
                                     className={`portfolio-menu${isPortfolioMenuClosed ? ' dropdown-closed' : ''}`}
-                                    onMouseLeave={() => setIsPortfolioMenuClosed(false)}
-                                    onFocus={() => setIsPortfolioMenuClosed(false)}
+                                    onMouseEnter={() => setIsPortfolioMenuClosed(false)}
+                                    onMouseLeave={() => setIsPortfolioMenuClosed(true)}
                                 >
                                     <a
                                         className={`nav-link${activeSection === item.id ? ' selected' : ''}`}
                                         href="#portfolio"
                                         aria-current={activeSection === item.id ? 'page' : undefined}
                                         onClick={(event) => handleNavClick(event, item.id)}
+                                        onFocus={() => setIsPortfolioMenuClosed(false)}
                                     >
                                         {item.label}
                                         <i className="fa fa-angle-down" aria-hidden="true"></i>

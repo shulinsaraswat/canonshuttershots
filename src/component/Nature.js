@@ -28,7 +28,7 @@ const images = [
 ];
 
 const relatedGalleries = [
-    { label: 'People', href: 'https://shulinsaraswat.github.io/canonshuttershots-people' },
+    { label: 'People', href: '#/people' },
     { label: 'Places', href: 'https://shulinsaraswat.github.io/canonshuttershots-place' },
     { label: 'Wildlife', href: 'https://shulinsaraswat.github.io/canonshuttershots-wildlife' },
 ];
