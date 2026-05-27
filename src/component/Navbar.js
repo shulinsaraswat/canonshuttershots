@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.png';
+import logo from '../images/canonshuttershots_logo.png';
 import '../css/navbar.css';
 
 export default class Navbar extends Component{
@@ -52,7 +52,7 @@ export default class Navbar extends Component{
                     </ul>
                 </div>
                 <a className="navbar-brand" href="/">
-                    <img src={logo} width="50" height="30" alt="cs logo" loading="lazy"/>
+                    <img className="brand-logo" src={logo} alt="Canon Shuttershots logo" loading="lazy"/>
                 </a>
             </nav>
         );

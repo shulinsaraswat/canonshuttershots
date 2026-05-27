@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.png';
+import logo from '../images/canonshuttershots_logo.png';
 import '../css/navbarSmall.css';
-import PetsIcon from '@material-ui/icons/Pets';
-import EcoIcon from '@material-ui/icons/Eco';
-import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
-import PlaceIcon from '@material-ui/icons/Place';
-import HomeIcon from '@material-ui/icons/Home';
+import PetsIcon from '@mui/icons-material/Pets';
+import NatureIcon from '@mui/icons-material/Nature';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import PlaceIcon from '@mui/icons-material/Place';
+import HomeIcon from '@mui/icons-material/Home';
 
 
 export default class NavbarSmall extends Component{
@@ -42,7 +42,7 @@ export default class NavbarSmall extends Component{
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link selected" href="/nature"><span><i className="material-icons "><EcoIcon/></i></span><span className="icon-text"> &emsp;Nature</span></a><br/>
+                            <a className="nav-link selected" href="/nature"><span><i className="material-icons "><NatureIcon/></i></span><span className="icon-text"> &emsp;Nature</span></a><br/>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/people"><span><i className="material-icons "><PeopleAltIcon/></i></span><span className="icon-text"> &emsp;People</span></a><br/>
@@ -59,7 +59,7 @@ export default class NavbarSmall extends Component{
                     </ul>
                 </div>
                 <a className="navbar-brand" href="/">
-                    <img src={logo} width="50" height="30" alt="cs logo" loading="lazy"/>
+                    <img className="brand-logo" src={logo} alt="Canon Shuttershots logo" loading="lazy"/>
                 </a>
             </nav>
         );

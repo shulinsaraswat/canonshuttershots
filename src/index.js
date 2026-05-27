@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -10,19 +10,16 @@ import Nature from './component/Nature';
 import People from './component/People';
 
 const routes=<Router basename="/canonshuttershots">
-  <Switch>
-    <Route exact path='/' component={App}/>
-    <Route exact path='/nature' component={Nature}/>
-    <Route exact path='/place' component={Place}/>
-    <Route exact path='/people' component={People}/>
-    <Route exact path='/wildlife' component={Wildlife}/>
-  </Switch>
+  <Routes>
+    <Route path='/' element={<App />}/>
+    <Route path='/nature' element={<Nature />}/>
+    <Route path='/place' element={<Place />}/>
+    <Route path='/people' element={<People />}/>
+    <Route path='/wildlife' element={<Wildlife />}/>
+  </Routes>
 </Router>
 
-ReactDOM.render(
-  routes,
-  document.getElementById('root')
-);
+createRoot(document.getElementById('root')).render(routes);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

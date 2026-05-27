@@ -1,39 +1,28 @@
 import React, { useState, useEffect } from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import IconButton from '@material-ui/core/IconButton';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import IconButton from '@mui/material/IconButton';
 
-const useStyles = makeStyles((theme) => ({
-    toTop: {
-        zIndex: 2,
-        position: 'fixed',
+const toTopStyles = {
+    zIndex: 2,
+    position: 'fixed',
+    bottom: '12vh',
+    right: '6.4%',
+    backgroundColor: 'rgb(220,220,220,0.7)',
+    color: 'black',
+    '&:hover, &.Mui-focusVisible': {
+        transition: '0.3s',
+        color: '#00a2c8',
+        backgroundColor: '#DCDCDC'
+    },
+    '@media (min-width: 1200px)': {
+        right: '2.0%',
         bottom: '3.6em',
-        backgroundColor: '#DCDCDC',
-        color: 'black',
-        "&:hover, &.Mui-focusVisible": {
-            transition: '0.3s',
-            color: '#00a2c8',
-            backgroundColor: '#DCDCDC'
-        },
-        [theme.breakpoints.up('xs')]: {
-            right: '6.4%',
-            bottom:'12vh',
-            backgroundColor: 'rgb(220,220,220,0.7)',
-        },
-        [theme.breakpoints.up('lg')]: {
-            right: '2.0%',
-            bottom:'3.6em',
-        },
-    }
-})
-)
+    },
+};
 
 const Scroll = ({
     showBelow,
 }) => {
-
-    const classes = useStyles();
-
     const [show, setShow] = useState(showBelow ? false : true)
 
     const handleScroll = () => {
@@ -58,7 +47,7 @@ const Scroll = ({
     return (
         <div>
             {show &&
-                <IconButton onClick={handleClick} className={classes.toTop} aria-label="to top" component="span">
+                <IconButton onClick={handleClick} sx={toTopStyles} aria-label="to top" component="span">
                     <ExpandLessIcon />
                 </IconButton>
             }

@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import about from '../images/about.jpg';
+import '../css/about.css';
 
 
 export default class About extends Component{
@@ -7,25 +8,30 @@ export default class About extends Component{
     render(){
         return(
             // About BEGIN
-            <div id="about" data-aos="fade-up" style={{backgroundColor:'#f1f1f1', paddingBottom:'17px'}}><br/>
-                <h2 style={{textAlign:'center'}}>ABOUT ME</h2>
-                <hr style={{width:'8%', color:'#00a2c8', backgroundColor:'#00a2c8'}}></hr><br/>
+            <div id="about" className="about-section" data-aos="fade-up"><br/>
+                <p className="section-kicker">Behind the lens</p>
+                <h2 className="about-title">ABOUT ME</h2>
+                <hr className="section-line"></hr><br/>
                 <div className="container conatinerSmall">
-                    <div className="card mb-3" data-aos="fade-up" >
-                        <div className="row">
-                            <div className="col-md-3">
-                                <img src={about} className="card-img" alt="profile" style={{height:'100%'}}/>
+                    <div className="about-card" data-aos="fade-up" >
+                        <div className="row no-gutters align-items-stretch">
+                            <div className="col-md-4">
+                                <img src={about} className="about-photo" alt="Shulin Saraswat with a camera"/>
                             </div>
-                            <div className="col-md-9">
-                                <div className="card-body">
-                                    <p className="card-text" style={{lineHeight:'2.0', textAlign:'left'}}>
-                                        Hi! I'm Shulin Saraswat, a <i>photography enthusiast</i> , who capture the good times, develop from the negative and if things don't make out <b>TAKE ANOTHER SHOT !</b>.
-                                        Moreover I am a developer and analyst from Bangalore, India working with <b style={{color:'#21AA47'}}>Standard Chartered Global Business Service</b> and <i>titled as Developer - Technology &amp; Innovation. </i> 
-                                        I pursued my <i>Bachelor's of Technology in Electronics and Communication with specialisation in Internet of Things and Sensors</i> at Vellore Institute of Technology, Vellore
+                            <div className="col-md-8">
+                                <div className="about-copy">
+                                    <p>
+                                        Hi, I am Shulin Saraswat, the eye behind <strong>Canon Shuttershots</strong>. Photography is my way of slowing the world down: noticing the light before it moves, the expression before it changes, and the small details that make a place feel alive.
                                     </p>
-                                    <p><i><strong>
-                                        "To photograph is to hold one's breathe, when all faculties coverge to capture fleeting reality. 
-                                        It's at that precise moment that mastering an image becomes a great physical and intellectual joy."</strong></i>
+                                    <p>
+                                        My portfolio moves through nature, wildlife, people, and places because each one asks for a different kind of patience. Sometimes it is a field of sunflowers catching the day. Sometimes it is a candid portrait, a city corner, or a quiet animal moment that disappears if you rush it.
+                                    </p>
+                                    <p>
+                                        Outside photography, I come from a developer and IoT background, and that technical curiosity follows me into every frame. I like the craft as much as the click: composition, timing, color, and the tiny decisions that turn a memory into an image.
+                                    </p>
+                                    <p className="about-quote"><strong>
+                                        Capture the good times, develop from the negatives, and when the frame does not work, take another shot.
+                                    </strong>
                                     </p>
                                 </div>
                             </div>

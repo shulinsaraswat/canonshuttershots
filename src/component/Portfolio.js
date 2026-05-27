@@ -12,7 +12,6 @@ export default function Portfolio(){
                 <hr style={{width:'8%', color:'#00a2c8', backgroundColor:'#00a2c8'}}></hr><br/>
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-2 box-wrap">
-                        <a href="https://shulinsaraswat.github.io/canonshuttershots-nature" style={{textDecoration:'none', color: '#212529'}}>
                         <div className="col mb-4">
                             <div className="card box">
                                     <img src={nature} className="card-img-top" alt="flower for nature"/>
@@ -25,8 +24,7 @@ export default function Portfolio(){
                                         </a>
                                     </div>
                             </div>
-                        </div></a>
-                        <a href="https://shulinsaraswat.github.io/canonshuttershots-people" style={{textDecoration:'none', color: '#212529'}}>
+                        </div>
                         <div className="col mb-4">
                             <div className="card box">
                                 <img src={people} className="card-img-top" alt="group"/>
@@ -39,8 +37,7 @@ export default function Portfolio(){
                                     </a>
                                 </div>
                             </div>
-                        </div></a>
-                        <a href="https://shulinsaraswat.github.io/canonshuttershots-place" style={{textDecoration:'none', color: '#212529'}}>
+                        </div>
                         <div className="col mb-4">
                             <div className="card box">
                                 <img src={place} className="card-img-top" alt="place"/>
@@ -53,8 +50,7 @@ export default function Portfolio(){
                                     </a>
                                 </div>
                             </div>
-                        </div></a>
-                        <a href="https://shulinsaraswat.github.io/canonshuttershots-wildlife" style={{textDecoration:'none', color: '#212529'}}>
+                        </div>
                         <div className="col mb-4">
                             <div className="card box">
                                 <img src={wildlife} className="card-img-top" alt="lion"/>
@@ -67,7 +63,7 @@ export default function Portfolio(){
                                     </a>
                                 </div>
                             </div>
-                        </div></a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -27,6 +27,12 @@ html{
 .navbar-nav>li:hover, .navbar-light .navbar-nav .nav-link:hover {
     cursor: pointer;
 }
+.brand-logo{
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    border-radius: 50%;
+}
 .navbar:not(active){
     transition: all 1s ease-in-out;
 }

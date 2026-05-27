@@ -1,11 +1,10 @@
 import React,{Component} from 'react';
-import ReactDOM from 'react-dom';
 import '../css/sidebar.css';
-import PetsIcon from '@material-ui/icons/Pets';
-import EcoIcon from '@material-ui/icons/Eco';
-import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
-import PlaceIcon from '@material-ui/icons/Place';
-import HomeIcon from '@material-ui/icons/Home';
+import PetsIcon from '@mui/icons-material/Pets';
+import NatureIcon from '@mui/icons-material/Nature';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import PlaceIcon from '@mui/icons-material/Place';
+import HomeIcon from '@mui/icons-material/Home';
 
 export default class Sidebar extends Component{
 
@@ -25,18 +24,18 @@ export default class Sidebar extends Component{
 
     handleMouseEnter(e){
         let element = document.getElementById('mySidebar')
-        ReactDOM.findDOMNode(element).style.width="200px";
-        ReactDOM.findDOMNode(element).style.opacity="0.9";
+        element.style.width="200px";
+        element.style.opacity="0.9";
     }
     handleMouseLeave(e){
         let element = document.getElementById('mySidebar')
-        ReactDOM.findDOMNode(element).style.width="70px";
-        ReactDOM.findDOMNode(element).style.opacity="1.0";
+        element.style.width="70px";
+        element.style.opacity="1.0";
     }
     render(){
         return(
             <div id="mySidebar" className="sidebar" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-                <a className="btnSide" href="/nature"><span><i className="material-icons "><EcoIcon/></i></span><span className="icon-text"> &emsp;Nature</span></a><br/>
+                <a className="btnSide" href="/nature"><span><i className="material-icons "><NatureIcon/></i></span><span className="icon-text"> &emsp;Nature</span></a><br/>
                 <a className="btnSide" href="/people"><span><i className="material-icons "><PeopleAltIcon/></i></span><span className="icon-text"> &emsp;People</span></a><br/>
                 <a className="btnSide" href="/place"><span><i className="material-icons "><PlaceIcon/></i></span><span className="icon-text"> &emsp;Place</span></a><br/>
                 <a className="btnSide" href="/wildlife"><span><i className="material-icons "><PetsIcon/></i></span><span className="icon-text"> &emsp;Wildlife</span></a><br/>
