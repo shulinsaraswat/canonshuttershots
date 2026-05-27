@@ -1,16 +1,23 @@
 {
   "files": {
     "main.css": "/canonshuttershots/static/css/main.65e6800c.css",
-    "main.js": "/canonshuttershots/static/js/main.cd182685.js",
+    "main.js": "/canonshuttershots/static/js/main.9245c24e.js",
     "static/js/488.142c1fac.chunk.js": "/canonshuttershots/static/js/488.142c1fac.chunk.js",
+    "static/media/wl10.jpeg": "/canonshuttershots/static/media/wl10.8da0e73ea4b7cb1fa0fb.jpeg",
     "static/media/pp2.jpeg": "/canonshuttershots/static/media/pp2.eaacd9cca65d01769b6f.jpeg",
+    "static/media/wl5.jpeg": "/canonshuttershots/static/media/wl5.00d354b4099e46931830.jpeg",
+    "static/media/wl1.jpeg": "/canonshuttershots/static/media/wl1.8f9cc40cf76787ff97ae.jpeg",
     "static/media/nr6.jpeg": "/canonshuttershots/static/media/nr6.b07b19cbb771ba8bd622.jpeg",
+    "static/media/wl4.jpeg": "/canonshuttershots/static/media/wl4.5e2933b9c8e561dbae53.jpeg",
     "static/media/nr4.jpeg": "/canonshuttershots/static/media/nr4.2d44256689fc588bbb10.jpeg",
+    "static/media/wl2.jpeg": "/canonshuttershots/static/media/wl2.5453617382cae996ebfd.jpeg",
     "static/media/pp1.jpeg": "/canonshuttershots/static/media/pp1.6d789cb712105e54f8fc.jpeg",
     "static/media/hero2.jpeg": "/canonshuttershots/static/media/hero2.ac9811d59dc83fd514b9.jpeg",
     "static/media/pl5.jpeg": "/canonshuttershots/static/media/pl5.8810718e368fffc0f6d0.jpeg",
+    "static/media/wl3.jpeg": "/canonshuttershots/static/media/wl3.41a539ea6e15e0981763.jpeg",
     "static/media/nr7.jpeg": "/canonshuttershots/static/media/nr7.dfa6b47d804c94420437.jpeg",
     "static/media/pl3.jpeg": "/canonshuttershots/static/media/pl3.e2b47ebdcf0ce8751eb7.jpeg",
+    "static/media/wl9.jpeg": "/canonshuttershots/static/media/wl9.134340aa55dbfa4b0044.jpeg",
     "static/media/canonshuttershots_logo.png": "/canonshuttershots/static/media/canonshuttershots_logo.a3498306fe45e88e9239.png",
     "static/media/pl4.jpeg": "/canonshuttershots/static/media/pl4.f1a1f2a016b12ec5d6cd.jpeg",
     "static/media/pp10.jpeg": "/canonshuttershots/static/media/pp10.ea9db302f67628ea3adc.jpeg",
@@ -24,6 +31,7 @@
     "static/media/pp12.jpeg": "/canonshuttershots/static/media/pp12.80234d8a794362db3ce8.jpeg",
     "static/media/place.jpeg": "/canonshuttershots/static/media/place.f7edc9fbc26e0d9adc25.jpeg",
     "static/media/nr3.jpeg": "/canonshuttershots/static/media/nr3.451d1ee8200ff91bcb0b.jpeg",
+    "static/media/wl7.jpeg": "/canonshuttershots/static/media/wl7.1cd7dfaae1083af60507.jpeg",
     "static/media/pl1.jpeg": "/canonshuttershots/static/media/pl1.67954c14996f4f4d7af3.jpeg",
     "static/media/nr12.JPG": "/canonshuttershots/static/media/nr12.5e3dd2334cae227f522e.JPG",
     "static/media/pp14.jpeg": "/canonshuttershots/static/media/pp14.2a060a1bf120df303388.jpeg",
@@ -41,15 +49,17 @@
     "static/media/pp4.jpeg": "/canonshuttershots/static/media/pp4.3e0befb3284bf9e38a55.jpeg",
     "static/media/banner.jpeg": "/canonshuttershots/static/media/banner.af6730a68d175f2c1f6b.jpeg",
     "static/media/pp17.jpeg": "/canonshuttershots/static/media/pp17.f83f0e35959721c50fba.jpeg",
+    "static/media/wl8.jpeg": "/canonshuttershots/static/media/wl8.c0ea191ee10dfd2f869a.jpeg",
     "static/media/wildlife.jpg": "/canonshuttershots/static/media/wildlife.2ab06f7acb953fff9d1f.jpg",
+    "static/media/wl6.jpeg": "/canonshuttershots/static/media/wl6.3fb865ab272f4bb1111f.jpeg",
     "static/media/nr1.jpg": "/canonshuttershots/static/media/nr1.3ea34dcae02e5b53a787.jpg",
     "index.html": "/canonshuttershots/index.html",
     "main.65e6800c.css.map": "/canonshuttershots/static/css/main.65e6800c.css.map",
-    "main.cd182685.js.map": "/canonshuttershots/static/js/main.cd182685.js.map",
+    "main.9245c24e.js.map": "/canonshuttershots/static/js/main.9245c24e.js.map",
     "488.142c1fac.chunk.js.map": "/canonshuttershots/static/js/488.142c1fac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65e6800c.css",
-    "static/js/main.cd182685.js"
+    "static/js/main.9245c24e.js"
   ]
 }
