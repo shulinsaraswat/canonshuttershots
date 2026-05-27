@@ -1,21 +1,17 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {HashRouter as Router, Navigate, Route, Routes} from 'react-router-dom';
 import './index.css';
 import App from './App';
+import Main from './component/Main';
 import reportWebVitals from './reportWebVitals';
-import Wildlife from './component/Wildlife';
-import Place from './component/Place';
 import Nature from './component/Nature';
-import People from './component/People';
 
-const routes=<Router basename="/canonshuttershots">
+const routes=<Router>
   <Routes>
-    <Route path='/' element={<App />}/>
-    <Route path='/nature' element={<Nature />}/>
-    <Route path='/place' element={<Place />}/>
-    <Route path='/people' element={<People />}/>
-    <Route path='/wildlife' element={<Wildlife />}/>
+    <Route path='/' element={<App><Main /></App>}/>
+    <Route path='/nature' element={<App><Nature /></App>}/>
+    <Route path='*' element={<Navigate to='/' replace />}/>
   </Routes>
 </Router>
 

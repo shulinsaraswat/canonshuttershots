@@ -1,0 +1,114 @@
+.gallery-page{
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+.gallery-hero{
+    height: 72vh;
+    min-height: 560px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-hero img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.gallery-hero-overlay{
+    background:
+        linear-gradient(90deg, rgba(13, 17, 23, 0.88) 0%, rgba(13, 17, 23, 0.58) 48%, rgba(13, 17, 23, 0.16) 100%),
+        radial-gradient(circle at 18% 44%, color-mix(in srgb, var(--gallery-accent) 26%, transparent), transparent 34%);
+    inset: 0;
+    position: absolute;
+}
+
+.gallery-hero-content{
+    left: 8%;
+    max-width: 720px;
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+}
+
+.gallery-hero-content .section-kicker{
+    color: var(--gallery-accent);
+    text-align: left;
+}
+
+.gallery-hero h1{
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 0.95;
+    margin-bottom: 20px;
+}
+
+.gallery-hero-content > p:last-child{
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 1.18rem;
+    line-height: 1.7;
+}
+
+.gallery-body{
+    background:
+        radial-gradient(circle at 8% 0%, color-mix(in srgb, var(--gallery-accent) 12%, transparent), transparent 26%),
+        var(--bg);
+}
+
+.gallery-grid{
+    column-count: 3;
+    column-gap: 22px;
+}
+
+.gallery-tile{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    break-inside: avoid;
+    margin: 0 0 22px;
+    overflow: hidden;
+}
+
+.gallery-tile img{
+    display: block;
+    height: auto;
+    transition: transform 0.35s ease;
+    width: 100%;
+}
+
+.gallery-tile:hover img{
+    transform: scale(1.035);
+}
+
+@media (max-width: 991.98px){
+    .gallery-grid{
+        column-count: 2;
+    }
+
+    .gallery-hero h1{
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 575.98px){
+    .gallery-hero{
+        min-height: 620px;
+    }
+
+    .gallery-hero-content{
+        left: 24px;
+        max-width: calc(100% - 48px);
+    }
+
+    .gallery-hero h1{
+        font-size: 3rem;
+    }
+
+    .gallery-grid{
+        column-count: 1;
+    }
+}

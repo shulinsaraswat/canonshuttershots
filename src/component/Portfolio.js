@@ -12,7 +12,7 @@ const collections = [
         description: 'Fields, flowers, and landscapes framed around quiet details and changing light.',
         image: nature,
         alt: 'Sunlit flower for the nature collection',
-        href: 'https://shulinsaraswat.github.io/canonshuttershots-nature',
+        href: '#/nature',
         accent: 'var(--fresh-green)',
     },
     {
